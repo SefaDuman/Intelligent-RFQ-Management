@@ -1,0 +1,931 @@
+{
+  "name": "mserp_vrmrequestforquotationreplyheaderentity",
+  "title": "RFQ reply headers for Supplier Portal (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_vrmrequestforquotationreplyheaderentities",
+      "x-ms-dataverse-primary-id": "mserp_vrmrequestforquotationreplyheaderentityid",
+      "x-ms-dataverse-primary-name": "mserp_rfqnumber",
+      "properties": {
+        "mserp_actionname": {
+          "type": "string",
+          "title": "Action name",
+          "x-ms-dataverse-attribute": "mserp_actionname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_actionname",
+          "maxLength": 80
+        },
+        "mserp_actionparameters": {
+          "type": "string",
+          "title": "Action parameters",
+          "x-ms-dataverse-attribute": "mserp_actionparameters",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_actionparameters",
+          "maxLength": 1048576
+        },
+        "mserp_allowalternates": {
+          "type": "string",
+          "title": "Allow alternates on response lines",
+          "x-ms-dataverse-attribute": "mserp_allowalternates",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_allowalternates",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_allowalternatesname": {
+          "type": "string",
+          "title": "mserp_allowalternatesname",
+          "x-ms-dataverse-attribute": "mserp_allowalternatesname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_allowalternatesName",
+          "x-ms-dataverse-attribute-of": "mserp_allowalternates",
+          "x-ms-read-only": true
+        },
+        "mserp_allowvendorquestion": {
+          "type": "string",
+          "title": "Allow vendor question",
+          "x-ms-dataverse-attribute": "mserp_allowvendorquestion",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_allowvendorquestion",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_allowvendorquestionname": {
+          "type": "string",
+          "title": "mserp_allowvendorquestionname",
+          "x-ms-dataverse-attribute": "mserp_allowvendorquestionname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_allowvendorquestionName",
+          "x-ms-dataverse-attribute-of": "mserp_allowvendorquestion",
+          "x-ms-read-only": true
+        },
+        "mserp_arepricesincludingsalestax": {
+          "type": "string",
+          "title": "Prices include sales tax",
+          "x-ms-dataverse-attribute": "mserp_arepricesincludingsalestax",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_arepricesincludingsalestax",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_arepricesincludingsalestaxname": {
+          "type": "string",
+          "title": "mserp_arepricesincludingsalestaxname",
+          "x-ms-dataverse-attribute": "mserp_arepricesincludingsalestaxname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_arepricesincludingsalestaxName",
+          "x-ms-dataverse-attribute-of": "mserp_arepricesincludingsalestax",
+          "x-ms-read-only": true
+        },
+        "mserp_bidsubmittingpersonname": {
+          "type": "string",
+          "title": "Bid submitter",
+          "x-ms-dataverse-attribute": "mserp_bidsubmittingpersonname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_bidsubmittingpersonname",
+          "maxLength": 160
+        },
+        "mserp_bidsubmittingpersonpartynumber": {
+          "type": "string",
+          "title": "Bid submitting person party number",
+          "x-ms-dataverse-attribute": "mserp_bidsubmittingpersonpartynumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_bidsubmittingpersonpartynumber",
+          "x-ms-read-only": true,
+          "maxLength": 40
+        },
+        "mserp_currencycode": {
+          "type": "string",
+          "title": "Requested currency",
+          "x-ms-dataverse-attribute": "mserp_currencycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_currencycode",
+          "required": true,
+          "maxLength": 3
+        },
+        "mserp_dataareaid": {
+          "type": "string",
+          "title": "Company Code",
+          "x-ms-dataverse-attribute": "mserp_dataareaid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dataareaid",
+          "maxLength": 4
+        },
+        "mserp_dataareaid_id": {
+          "type": "string",
+          "title": "Company",
+          "x-ms-dataverse-attribute": "mserp_dataareaid_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_dataAreaId_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_dataAreaId_id"
+          ]
+        },
+        "mserp_dataareaid_idname": {
+          "type": "string",
+          "title": "mserp_dataareaid_idname",
+          "x-ms-dataverse-attribute": "mserp_dataareaid_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dataAreaId_idName",
+          "x-ms-dataverse-attribute-of": "mserp_dataareaid_id",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_deliverymodecode": {
+          "type": "string",
+          "title": "Requested Mode of delivery",
+          "x-ms-dataverse-attribute": "mserp_deliverymodecode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliverymodecode",
+          "maxLength": 10
+        },
+        "mserp_deliverytermscode": {
+          "type": "string",
+          "title": "Requested Delivery terms",
+          "x-ms-dataverse-attribute": "mserp_deliverytermscode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_deliverytermscode",
+          "maxLength": 10
+        },
+        "mserp_fk_currency_id": {
+          "type": "string",
+          "title": "Currencies for Supplier Portal",
+          "x-ms-dataverse-attribute": "mserp_fk_currency_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_Currency_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_FK_Currency_id"
+          ]
+        },
+        "mserp_fk_currency_idname": {
+          "type": "string",
+          "title": "mserp_fk_currency_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_currency_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_Currency_idName",
+          "x-ms-dataverse-attribute-of": "mserp_fk_currency_id",
+          "x-ms-read-only": true,
+          "maxLength": 3
+        },
+        "mserp_fk_deliverymode_id": {
+          "type": "string",
+          "title": "Modes of delivery for Supplier Portal",
+          "x-ms-dataverse-attribute": "mserp_fk_deliverymode_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_DeliveryMode_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_FK_DeliveryMode_id"
+          ]
+        },
+        "mserp_fk_deliverymode_idname": {
+          "type": "string",
+          "title": "mserp_fk_deliverymode_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_deliverymode_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_DeliveryMode_idName",
+          "x-ms-dataverse-attribute-of": "mserp_fk_deliverymode_id",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_deliveryterms_id": {
+          "type": "string",
+          "title": "Terms of delivery for Supplier Portal",
+          "x-ms-dataverse-attribute": "mserp_fk_deliveryterms_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_DeliveryTerms_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_FK_DeliveryTerms_id"
+          ]
+        },
+        "mserp_fk_deliveryterms_idname": {
+          "type": "string",
+          "title": "mserp_fk_deliveryterms_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_deliveryterms_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_DeliveryTerms_idName",
+          "x-ms-dataverse-attribute-of": "mserp_fk_deliveryterms_id",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_fk_legalentity_id": {
+          "type": "string",
+          "title": "Legal entities for Supplier Portal",
+          "x-ms-dataverse-attribute": "mserp_fk_legalentity_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_LegalEntity_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_FK_LegalEntity_id"
+          ]
+        },
+        "mserp_fk_legalentity_idname": {
+          "type": "string",
+          "title": "mserp_fk_legalentity_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_legalentity_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_LegalEntity_idName",
+          "x-ms-dataverse-attribute-of": "mserp_fk_legalentity_id",
+          "x-ms-read-only": true,
+          "maxLength": 4
+        },
+        "mserp_fk_paymentterm_id": {
+          "type": "string",
+          "title": "Terms of payment for Supplier Portal",
+          "x-ms-dataverse-attribute": "mserp_fk_paymentterm_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_PaymentTerm_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_FK_PaymentTerm_id"
+          ]
+        },
+        "mserp_fk_paymentterm_idname": {
+          "type": "string",
+          "title": "mserp_fk_paymentterm_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_paymentterm_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_PaymentTerm_idName",
+          "x-ms-dataverse-attribute-of": "mserp_fk_paymentterm_id",
+          "x-ms-read-only": true,
+          "maxLength": 100
+        },
+        "mserp_fk_person_id": {
+          "type": "string",
+          "title": "Person for Supplier Portal",
+          "x-ms-dataverse-attribute": "mserp_fk_person_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_Person_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_FK_Person_id"
+          ]
+        },
+        "mserp_fk_person_idname": {
+          "type": "string",
+          "title": "mserp_fk_person_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_person_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_Person_idName",
+          "x-ms-dataverse-attribute-of": "mserp_fk_person_id",
+          "x-ms-read-only": true,
+          "maxLength": 40
+        },
+        "mserp_fk_rfqheader_id": {
+          "type": "string",
+          "title": "Request for quotation header for Supplier Portal",
+          "x-ms-dataverse-attribute": "mserp_fk_rfqheader_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_RFQHeader_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_FK_RFQHeader_id"
+          ]
+        },
+        "mserp_fk_rfqheader_idname": {
+          "type": "string",
+          "title": "mserp_fk_rfqheader_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_rfqheader_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_RFQHeader_idName",
+          "x-ms-dataverse-attribute-of": "mserp_fk_rfqheader_id",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_fk_vendor_id": {
+          "type": "string",
+          "title": "Supplier Engagement Vendors",
+          "x-ms-dataverse-attribute": "mserp_fk_vendor_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_FK_Vendor_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_FK_Vendor_id"
+          ]
+        },
+        "mserp_fk_vendor_idname": {
+          "type": "string",
+          "title": "mserp_fk_vendor_idname",
+          "x-ms-dataverse-attribute": "mserp_fk_vendor_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_FK_Vendor_idName",
+          "x-ms-dataverse-attribute-of": "mserp_fk_vendor_id",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_formatteddeliveryaddress": {
+          "type": "string",
+          "title": "Delivery address",
+          "x-ms-dataverse-attribute": "mserp_formatteddeliveryaddress",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_formatteddeliveryaddress",
+          "x-ms-read-only": true,
+          "maxLength": 250
+        },
+        "mserp_hasdocuments": {
+          "type": "string",
+          "title": "Has attachment",
+          "x-ms-dataverse-attribute": "mserp_hasdocuments",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_hasdocuments",
+          "x-ms-read-only": true,
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_hasdocumentsname": {
+          "type": "string",
+          "title": "mserp_hasdocumentsname",
+          "x-ms-dataverse-attribute": "mserp_hasdocumentsname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_hasdocumentsName",
+          "x-ms-dataverse-attribute-of": "mserp_hasdocuments",
+          "x-ms-read-only": true
+        },
+        "mserp_highestrfqstatus": {
+          "type": "string",
+          "title": "Highest status",
+          "x-ms-dataverse-attribute": "mserp_highestrfqstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_highestrfqstatus",
+          "x-ms-read-only": true,
+          "enum": [
+            "Created",
+            "Sent",
+            "Received",
+            "Rejected",
+            "Accepted",
+            "Canceled",
+            "Declined",
+            "Removed"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "5609c5a2-3003-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_highestrfqstatusname": {
+          "type": "string",
+          "title": "mserp_highestrfqstatusname",
+          "x-ms-dataverse-attribute": "mserp_highestrfqstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_highestrfqstatusName",
+          "x-ms-dataverse-attribute-of": "mserp_highestrfqstatus",
+          "x-ms-read-only": true
+        },
+        "mserp_isrfqbidinprogress": {
+          "type": "string",
+          "title": "IsRFQBidInProgress",
+          "x-ms-dataverse-attribute": "mserp_isrfqbidinprogress",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isrfqbidinprogress",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isrfqbidinprogressname": {
+          "type": "string",
+          "title": "mserp_isrfqbidinprogressname",
+          "x-ms-dataverse-attribute": "mserp_isrfqbidinprogressname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isrfqbidinprogressName",
+          "x-ms-dataverse-attribute-of": "mserp_isrfqbidinprogress",
+          "x-ms-read-only": true
+        },
+        "mserp_lowestrfqstatus": {
+          "type": "string",
+          "title": "Lowest status",
+          "x-ms-dataverse-attribute": "mserp_lowestrfqstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_lowestrfqstatus",
+          "x-ms-read-only": true,
+          "enum": [
+            "Created",
+            "Sent",
+            "Received",
+            "Rejected",
+            "Accepted",
+            "Canceled",
+            "Declined",
+            "Removed"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "5609c5a2-3003-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_lowestrfqstatusname": {
+          "type": "string",
+          "title": "mserp_lowestrfqstatusname",
+          "x-ms-dataverse-attribute": "mserp_lowestrfqstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_lowestrfqstatusName",
+          "x-ms-dataverse-attribute-of": "mserp_lowestrfqstatus",
+          "x-ms-read-only": true
+        },
+        "mserp_paymenttermsname": {
+          "type": "string",
+          "title": "Terms of payment",
+          "x-ms-dataverse-attribute": "mserp_paymenttermsname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_paymenttermsname",
+          "maxLength": 100
+        },
+        "mserp_reasoncode": {
+          "type": "string",
+          "title": "Reason code",
+          "x-ms-dataverse-attribute": "mserp_reasoncode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_reasoncode",
+          "x-ms-read-only": true,
+          "maxLength": 10
+        },
+        "mserp_reasoncomment": {
+          "type": "string",
+          "title": "Reason comment",
+          "x-ms-dataverse-attribute": "mserp_reasoncomment",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_reasoncomment",
+          "x-ms-read-only": true,
+          "maxLength": 60
+        },
+        "mserp_replycurrencycode": {
+          "type": "string",
+          "title": "Currency",
+          "x-ms-dataverse-attribute": "mserp_replycurrencycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_replycurrencycode",
+          "maxLength": 3
+        },
+        "mserp_replydeliverydate": {
+          "type": "string",
+          "title": "Reply delivery date",
+          "x-ms-dataverse-attribute": "mserp_replydeliverydate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_replydeliverydate"
+        },
+        "mserp_replydeliverymodecode": {
+          "type": "string",
+          "title": "Reply - Mode of delivery",
+          "x-ms-dataverse-attribute": "mserp_replydeliverymodecode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_replydeliverymodecode",
+          "maxLength": 10
+        },
+        "mserp_replydeliverytermscode": {
+          "type": "string",
+          "title": "Reply - Delivery terms",
+          "x-ms-dataverse-attribute": "mserp_replydeliverytermscode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_replydeliverytermscode",
+          "maxLength": 10
+        },
+        "mserp_replypaymenttermsname": {
+          "type": "string",
+          "title": "Reply - Terms of payment",
+          "x-ms-dataverse-attribute": "mserp_replypaymenttermsname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_replypaymenttermsname",
+          "maxLength": 100
+        },
+        "mserp_replyprogressstatus": {
+          "type": "string",
+          "title": "Reply progress",
+          "x-ms-dataverse-attribute": "mserp_replyprogressstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_replyprogressstatus",
+          "x-ms-read-only": true,
+          "enum": [
+            "Not started",
+            "Vendor is updating",
+            "Purchaser is updating",
+            "Submitted by vendor",
+            "Submitted by purchaser",
+            "Declined by vendor",
+            "Declined by purchaser",
+            "Returned to vendor"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "4409c5a2-3003-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Reply progress (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_replyprogressstatusname": {
+          "type": "string",
+          "title": "mserp_replyprogressstatusname",
+          "x-ms-dataverse-attribute": "mserp_replyprogressstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_replyprogressstatusName",
+          "x-ms-dataverse-attribute-of": "mserp_replyprogressstatus",
+          "x-ms-read-only": true
+        },
+        "mserp_replytotaldiscountpercentage": {
+          "type": "string",
+          "title": "Reply - Total discount %",
+          "x-ms-dataverse-attribute": "mserp_replytotaldiscountpercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_replytotaldiscountpercentage"
+        },
+        "mserp_replyvaliditydateend": {
+          "type": "string",
+          "title": "Reply Purchase agreement expiration date",
+          "x-ms-dataverse-attribute": "mserp_replyvaliditydateend",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_replyvaliditydateend"
+        },
+        "mserp_replyvaliditydatestart": {
+          "type": "string",
+          "title": "Reply Purchase agreement effective date",
+          "x-ms-dataverse-attribute": "mserp_replyvaliditydatestart",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_replyvaliditydatestart"
+        },
+        "mserp_requesteddeliverydate": {
+          "type": "string",
+          "title": "Requested receipt date",
+          "x-ms-dataverse-attribute": "mserp_requesteddeliverydate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_requesteddeliverydate"
+        },
+        "mserp_requesteremail": {
+          "type": "string",
+          "title": "Requester email",
+          "x-ms-dataverse-attribute": "mserp_requesteremail",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_requesteremail",
+          "x-ms-read-only": true,
+          "maxLength": 80
+        },
+        "mserp_requestername": {
+          "type": "string",
+          "title": "Requester name",
+          "x-ms-dataverse-attribute": "mserp_requestername",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_requestername",
+          "x-ms-read-only": true,
+          "maxLength": 160
+        },
+        "mserp_requestingdepartmentname": {
+          "type": "string",
+          "title": "Requesting department",
+          "x-ms-dataverse-attribute": "mserp_requestingdepartmentname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_requestingdepartmentname",
+          "maxLength": 60
+        },
+        "mserp_rfqbidtype": {
+          "type": "string",
+          "title": "Bid type",
+          "x-ms-dataverse-attribute": "mserp_rfqbidtype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_rfqbidtype",
+          "enum": [
+            "Purchase order",
+            "Purchase agreement",
+            "Purchase requisition"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "4a09c5a2-3003-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Purchase type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_rfqbidtypename": {
+          "type": "string",
+          "title": "mserp_rfqbidtypename",
+          "x-ms-dataverse-attribute": "mserp_rfqbidtypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_rfqbidtypeName",
+          "x-ms-dataverse-attribute-of": "mserp_rfqbidtype",
+          "x-ms-read-only": true
+        },
+        "mserp_rfqcasenumber": {
+          "type": "string",
+          "title": "Request for quotation case",
+          "x-ms-dataverse-attribute": "mserp_rfqcasenumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_rfqcasenumber",
+          "required": true,
+          "maxLength": 20
+        },
+        "mserp_rfqcasetitle": {
+          "type": "string",
+          "title": "Document title",
+          "x-ms-dataverse-attribute": "mserp_rfqcasetitle",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_rfqcasetitle",
+          "maxLength": 60
+        },
+        "mserp_rfqdescription": {
+          "type": "string",
+          "title": "Enter information about the request for quotation",
+          "x-ms-dataverse-attribute": "mserp_rfqdescription",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_rfqdescription",
+          "maxLength": 1048576
+        },
+        "mserp_rfqexpirationdatetime": {
+          "type": "string",
+          "title": "Expiration date and time",
+          "x-ms-dataverse-attribute": "mserp_rfqexpirationdatetime",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_rfqexpirationdatetime"
+        },
+        "mserp_rfqname": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_rfqname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_rfqname",
+          "maxLength": 160
+        },
+        "mserp_rfqnumber": {
+          "type": "string",
+          "title": "Request for quotation",
+          "x-ms-dataverse-attribute": "mserp_rfqnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_rfqnumber",
+          "x-ms-dataverse-primary-name": true,
+          "required": true,
+          "maxLength": 20
+        },
+        "mserp_rfqstatus": {
+          "type": "string",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "mserp_rfqstatus",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_rfqstatus",
+          "x-ms-read-only": true,
+          "maxLength": 60
+        },
+        "mserp_totaldiscountpercentage": {
+          "type": "string",
+          "title": "Total discount %",
+          "x-ms-dataverse-attribute": "mserp_totaldiscountpercentage",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_totaldiscountpercentage"
+        },
+        "mserp_totalnumberofcompletedlines": {
+          "type": "string",
+          "title": "Completed",
+          "x-ms-dataverse-attribute": "mserp_totalnumberofcompletedlines",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_totalnumberofcompletedlines",
+          "x-ms-read-only": true
+        },
+        "mserp_totalnumberofcompletedlines_bigint": {
+          "type": "string",
+          "title": "Completed",
+          "x-ms-dataverse-attribute": "mserp_totalnumberofcompletedlines_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_totalnumberofcompletedlines_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_totalnumberoflines": {
+          "type": "string",
+          "title": "No. of lines",
+          "x-ms-dataverse-attribute": "mserp_totalnumberoflines",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_totalnumberoflines",
+          "x-ms-read-only": true
+        },
+        "mserp_totalnumberoflines_bigint": {
+          "type": "string",
+          "title": "No. of lines",
+          "x-ms-dataverse-attribute": "mserp_totalnumberoflines_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_totalnumberoflines_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_totalnumberofpendinglines": {
+          "type": "string",
+          "title": "Pending ",
+          "x-ms-dataverse-attribute": "mserp_totalnumberofpendinglines",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_totalnumberofpendinglines",
+          "x-ms-read-only": true
+        },
+        "mserp_totalnumberofpendinglines_bigint": {
+          "type": "string",
+          "title": "Pending ",
+          "x-ms-dataverse-attribute": "mserp_totalnumberofpendinglines_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_totalnumberofpendinglines_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_validfrom": {
+          "type": "string",
+          "title": "Effective date",
+          "x-ms-dataverse-attribute": "mserp_validfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_validfrom"
+        },
+        "mserp_validitydateend": {
+          "type": "string",
+          "title": "Purchase agreement expiration date",
+          "x-ms-dataverse-attribute": "mserp_validitydateend",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_validitydateend",
+          "x-ms-read-only": true
+        },
+        "mserp_validitydatestart": {
+          "type": "string",
+          "title": "Purchase agreement effective date",
+          "x-ms-dataverse-attribute": "mserp_validitydatestart",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_validitydatestart",
+          "x-ms-read-only": true
+        },
+        "mserp_validto": {
+          "type": "string",
+          "title": "Expiration date",
+          "x-ms-dataverse-attribute": "mserp_validto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_validto"
+        },
+        "mserp_vendoraccountnumber": {
+          "type": "string",
+          "title": "Vendor account",
+          "x-ms-dataverse-attribute": "mserp_vendoraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendoraccountnumber",
+          "required": true,
+          "maxLength": 20
+        },
+        "mserp_vendororderreference": {
+          "type": "string",
+          "title": "Vendor reference",
+          "x-ms-dataverse-attribute": "mserp_vendororderreference",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendororderreference",
+          "maxLength": 60
+        },
+        "mserp_vendorquestioncutoffdatetime": {
+          "type": "string",
+          "title": "Cutoff date and time",
+          "x-ms-dataverse-attribute": "mserp_vendorquestioncutoffdatetime",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_vendorquestioncutoffdatetime"
+        },
+        "mserp_vendorreplysubmissiondatetime": {
+          "type": "string",
+          "title": "Submission date and time",
+          "x-ms-dataverse-attribute": "mserp_vendorreplysubmissiondatetime",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_vendorreplysubmissiondatetime"
+        },
+        "mserp_vrmrequestforquotationreplyheaderentityid": {
+          "type": "string",
+          "title": "RFQ reply headers for Supplier Portal (mserp)",
+          "x-ms-dataverse-attribute": "mserp_vrmrequestforquotationreplyheaderentityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_vrmrequestforquotationreplyheaderentityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        }
+      },
+      "required": [
+        "mserp_currencycode",
+        "mserp_rfqcasenumber",
+        "mserp_rfqnumber",
+        "mserp_vendoraccountnumber",
+        "mserp_vrmrequestforquotationreplyheaderentityid"
+      ]
+    }
+  }
+}

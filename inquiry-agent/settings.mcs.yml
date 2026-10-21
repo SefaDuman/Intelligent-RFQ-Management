@@ -1,0 +1,25 @@
+displayName: RFQ Inquiry Assistant
+schemaName: rfq_inquiryAssistant
+accessControlPolicy: GroupMembership
+authenticationMode: Integrated
+authenticationTrigger: Always
+configuration:
+  settings:
+    GenerativeActionsEnabled: true
+
+  isAgentConnectable: true
+  gPTSettings:
+    defaultSchemaName: rfq_inquiryAssistant.gpt.default
+
+  aISettings:
+    useModelKnowledge: true
+    isFileAnalysisEnabled: true
+    isSemanticSearchEnabled: true
+    optInUseLatestModels: false
+
+  recognizer:
+    kind: GenerativeAIRecognizer
+
+publishedOn: 2026-10-21T10:02:38.0000000Z
+template: default-2.1.0
+language: 1033

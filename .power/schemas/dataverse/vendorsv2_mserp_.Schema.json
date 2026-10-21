@@ -1,0 +1,4873 @@
+{
+  "name": "mserp_vendvendorv2entity",
+  "title": "Vendors V2 (mserp)",
+  "schema": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "x-ms-dataverse-entity": true,
+      "x-ms-dataverse-entityset": "mserp_vendvendorv2entities",
+      "x-ms-dataverse-primary-id": "mserp_vendvendorv2entityid",
+      "x-ms-dataverse-primary-name": "mserp_vendoraccountnumber",
+      "properties": {
+        "mserp_addressbooks": {
+          "type": "string",
+          "title": "Address books",
+          "x-ms-dataverse-attribute": "mserp_addressbooks",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressbooks",
+          "maxLength": 1000
+        },
+        "mserp_addressbraziliancnpjorcpf": {
+          "type": "string",
+          "title": "CNPJ/CPF",
+          "x-ms-dataverse-attribute": "mserp_addressbraziliancnpjorcpf",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressbraziliancnpjorcpf",
+          "maxLength": 20
+        },
+        "mserp_addressbrazilianie": {
+          "type": "string",
+          "title": "IE",
+          "x-ms-dataverse-attribute": "mserp_addressbrazilianie",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressbrazilianie",
+          "maxLength": 20
+        },
+        "mserp_addressbuildingcompliment": {
+          "type": "string",
+          "title": "Building complement",
+          "x-ms-dataverse-attribute": "mserp_addressbuildingcompliment",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressbuildingcompliment",
+          "maxLength": 60
+        },
+        "mserp_addresscity": {
+          "type": "string",
+          "title": "City",
+          "x-ms-dataverse-attribute": "mserp_addresscity",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscity",
+          "maxLength": 60
+        },
+        "mserp_addresscityinkana": {
+          "type": "string",
+          "title": "City in Kana",
+          "x-ms-dataverse-attribute": "mserp_addresscityinkana",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscityinkana",
+          "maxLength": 60
+        },
+        "mserp_addresscountryregionid": {
+          "type": "string",
+          "title": "Country/region",
+          "x-ms-dataverse-attribute": "mserp_addresscountryregionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscountryregionid",
+          "maxLength": 10
+        },
+        "mserp_addresscountryregionisocode": {
+          "type": "string",
+          "title": "Country/region ISO",
+          "x-ms-dataverse-attribute": "mserp_addresscountryregionisocode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscountryregionisocode",
+          "maxLength": 2
+        },
+        "mserp_addresscountyid": {
+          "type": "string",
+          "title": "County",
+          "x-ms-dataverse-attribute": "mserp_addresscountyid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresscountyid",
+          "maxLength": 30
+        },
+        "mserp_addressdescription": {
+          "type": "string",
+          "title": "Name or description",
+          "x-ms-dataverse-attribute": "mserp_addressdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressdescription",
+          "maxLength": 60
+        },
+        "mserp_addressdistrictname": {
+          "type": "string",
+          "title": "District",
+          "x-ms-dataverse-attribute": "mserp_addressdistrictname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressdistrictname",
+          "maxLength": 60
+        },
+        "mserp_addresslatitude": {
+          "type": "string",
+          "title": "Latitude",
+          "x-ms-dataverse-attribute": "mserp_addresslatitude",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_addresslatitude"
+        },
+        "mserp_addresslocationid": {
+          "type": "string",
+          "title": "Location ID",
+          "x-ms-dataverse-attribute": "mserp_addresslocationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresslocationid",
+          "maxLength": 40
+        },
+        "mserp_addresslocationroles": {
+          "type": "string",
+          "title": "Purpose",
+          "x-ms-dataverse-attribute": "mserp_addresslocationroles",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresslocationroles",
+          "maxLength": 1000
+        },
+        "mserp_addresslongitude": {
+          "type": "string",
+          "title": "Longitude",
+          "x-ms-dataverse-attribute": "mserp_addresslongitude",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_addresslongitude"
+        },
+        "mserp_addresspostbox": {
+          "type": "string",
+          "title": "Post box",
+          "x-ms-dataverse-attribute": "mserp_addresspostbox",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresspostbox",
+          "maxLength": 20
+        },
+        "mserp_addressrecordid": {
+          "type": "string",
+          "title": "AddressRecordId",
+          "x-ms-dataverse-attribute": "mserp_addressrecordid",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_addressrecordid",
+          "x-ms-read-only": true
+        },
+        "mserp_addressrecordid_bigint": {
+          "type": "string",
+          "title": "AddressRecordId",
+          "x-ms-dataverse-attribute": "mserp_addressrecordid_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_addressrecordid_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_addressstateid": {
+          "type": "string",
+          "title": "State",
+          "x-ms-dataverse-attribute": "mserp_addressstateid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressstateid",
+          "maxLength": 10
+        },
+        "mserp_addressstreet": {
+          "type": "string",
+          "title": "Street",
+          "x-ms-dataverse-attribute": "mserp_addressstreet",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressstreet",
+          "maxLength": 250
+        },
+        "mserp_addressstreetinkana": {
+          "type": "string",
+          "title": "Street in Kana",
+          "x-ms-dataverse-attribute": "mserp_addressstreetinkana",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressstreetinkana",
+          "maxLength": 250
+        },
+        "mserp_addressstreetnumber": {
+          "type": "string",
+          "title": "Street number",
+          "x-ms-dataverse-attribute": "mserp_addressstreetnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addressstreetnumber",
+          "maxLength": 20
+        },
+        "mserp_addresstimezone": {
+          "type": "string",
+          "title": "Time zone",
+          "x-ms-dataverse-attribute": "mserp_addresstimezone",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_addresstimezone",
+          "enum": [
+            "(GMT-12:00) International Date Line West",
+            "(GMT-11:00) Coordinated Universal Time-11",
+            "(GMT-10:00) Hawaii",
+            "(GMT-09:00) Alaska",
+            "(GMT-08:00) Pacific Time (US & Canada)",
+            "(GMT-08:00) Tijuana, Baja California",
+            "(GMT-07:00) Arizona",
+            "(GMT-07:00) Mountain Time (US & Canada)",
+            "(GMT-07:00) Chihuahua, La Paz, Mazatlan",
+            "(GMT-06:00) Central America",
+            "(GMT-06:00) Central Time (US & Canada)",
+            "(GMT-06:00) Guadalajara, Mexico City, Monterrey",
+            "(GMT-06:00) Saskatchewan",
+            "(GMT-05:00) Bogota, Lima, Quito, Rio Branco",
+            "(GMT-05:00) Chetumal",
+            "(GMT-05:00) Eastern Time (US & Canada)",
+            "(GMT-05:00) Indiana (East)",
+            "(GMT-04:30) Caracas",
+            "(GMT-04:00) Asuncion",
+            "(GMT-04:00) Atlantic Time (Canada)",
+            "(GMT-04:00) La Paz",
+            "(GMT-04:00) Manaus",
+            "(GMT-04:00) Santiago",
+            "(GMT-03:30) Newfoundland",
+            "(GMT-03:00) Brasilia",
+            "(GMT-03:00) Buenos Aires",
+            "(GMT-03:00) Buenos Aires, Georgetown",
+            "(GMT-03:00) Greenland",
+            "(GMT-03:00) Montevideo",
+            "(GMT-03:00) Salvador",
+            "(GMT-02:00) Mid-Atlantic",
+            "(GMT-01:00) Azores",
+            "(GMT-01:00) Cabo Verde Is.",
+            "(GMT) Casablanca",
+            "(GMT) Coordinated Universal Time",
+            "(GMT) Casablanca, Monrovia, Reykjavik",
+            "(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London",
+            "(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+            "(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague",
+            "(GMT+01:00) Brussels, Copenhagen, Madrid, Paris",
+            "(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb",
+            "(GMT+01:00) Tripoli",
+            "(GMT+01:00) West Central Africa",
+            "(GMT+02:00) Amman",
+            "(GMT+02:00) Athens, Bucharest, Istanbul",
+            "(GMT+02:00) Beirut",
+            "(GMT+02:00) Minsk",
+            "(GMT+02:00) Cairo",
+            "(GMT+02:00) Damascus",
+            "(GMT+02:00) Harare, Pretoria",
+            "(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
+            "(GMT+02:00) Jerusalem",
+            "(GMT+02:00) Windhoek",
+            "(GMT+03:00) Istanbul",
+            "(GMT+02:00) Kaliningrad (RTZ 1)",
+            "(GMT+03:00) Baghdad",
+            "(GMT+03:00) Kuwait, Riyadh",
+            "(GMT+03:00) Moscow, St. Petersburg, Volgograd (RTZ 2)",
+            "(GMT+04:00) Port Louis",
+            "(GMT+03:00) Nairobi",
+            "(GMT+03:00) Tbilisi",
+            "(GMT+03:30) Tehran",
+            "(GMT+04:00) Abu Dhabi, Muscat",
+            "(GMT+04:00) Baku",
+            "(GMT+04:00) Izhevsk, Samara (RTZ 3)",
+            "(GMT+04:00) Yerevan",
+            "(GMT+04:00) Yerevan (Do not use)",
+            "(GMT+04:30) Kabul",
+            "(GMT+05:00) Ekaterinburg (RTZ 4)",
+            "(GMT+05:00) Islamabad, Karachi",
+            "(GMT+05:00) Toshkent",
+            "(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi",
+            "(GMT+05:30) Sri Jayawardenepura",
+            "(GMT+05:45) Kathmandu",
+            "(GMT+06:00) Nur-Sultan, Dhaka",
+            "(GMT+06:00) Dhaka",
+            "(GMT+06:00) Novosibirsk (RTZ 5)",
+            "(GMT+06:30) Yangon (Rangoon)",
+            "(GMT+07:00) Bangkok, Hanoi, Jakarta",
+            "(GMT+07:00) Krasnoyarsk (RTZ 6)",
+            "(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi",
+            "(GMT+08:00) Irkutsk (RTZ 7)",
+            "(GMT+08:00) Ulaanbaatar",
+            "(GMT+08:00) Kuala Lumpur, Singapore",
+            "(GMT+08:00) Perth",
+            "(GMT+08:00) Taipei",
+            "(GMT+09:00) Osaka, Sapporo, Tokyo",
+            "(GMT+09:00) Seoul",
+            "(GMT+09:00) Yakutsk (RTZ 8)",
+            "(GMT+09:30) Adelaide",
+            "(GMT+09:30) Darwin",
+            "(GMT+10:00) Brisbane",
+            "(GMT+10:00) Canberra, Melbourne, Sydney",
+            "(GMT+10:00) Guam, Port Moresby",
+            "(GMT+10:00) Hobart",
+            "(GMT+10:00) Vladivostok, Magadan (RTZ 9)",
+            "(GMT+11:00) Chokurdakh (RTZ 10)",
+            "(GMT+11:00) Magadan, Solomon Is., New Caledonia",
+            "(GMT+12:00) Magadan (Do not use)",
+            "(GMT+12:00) Anadyr, Petropavlovsk-Kamchatsky (RTZ 11)",
+            "(GMT+12:00) Auckland, Wellington",
+            "(GMT+12:00) Coordinated Universal Time+12",
+            "(GMT+12:00) Fiji, Kamchatka, Marshall Is.",
+            "(GMT+13:00) Samoa",
+            "(GMT+13:00) Nuku'alofa"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007,
+            200000008,
+            200000009,
+            200000010,
+            200000011,
+            200000012,
+            200000013,
+            200000014,
+            200000015,
+            200000016,
+            200000017,
+            200000018,
+            200000019,
+            200000020,
+            200000021,
+            200000022,
+            200000023,
+            200000024,
+            200000025,
+            200000026,
+            200000027,
+            200000028,
+            200000029,
+            200000030,
+            200000031,
+            200000032,
+            200000033,
+            200000034,
+            200000035,
+            200000036,
+            200000037,
+            200000038,
+            200000039,
+            200000040,
+            200000041,
+            200000042,
+            200000043,
+            200000044,
+            200000045,
+            200000046,
+            200000047,
+            200000048,
+            200000049,
+            200000050,
+            200000051,
+            200000052,
+            200000053,
+            200000054,
+            200000055,
+            200000056,
+            200000057,
+            200000058,
+            200000059,
+            200000060,
+            200000061,
+            200000062,
+            200000063,
+            200000064,
+            200000065,
+            200000066,
+            200000067,
+            200000068,
+            200000069,
+            200000070,
+            200000071,
+            200000072,
+            200000073,
+            200000074,
+            200000075,
+            200000076,
+            200000077,
+            200000078,
+            200000079,
+            200000080,
+            200000081,
+            200000082,
+            200000083,
+            200000084,
+            200000085,
+            200000086,
+            200000087,
+            200000088,
+            200000089,
+            200000090,
+            200000091,
+            200000092,
+            200000093,
+            200000094,
+            200000095,
+            200000096,
+            200000097,
+            200000098,
+            200000099,
+            200000100,
+            200000101,
+            200000102,
+            200000103,
+            200000104
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "edebfe1d-7202-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Timezone (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_addresstimezonename": {
+          "type": "string",
+          "title": "mserp_addresstimezonename",
+          "x-ms-dataverse-attribute": "mserp_addresstimezonename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_addresstimezoneName",
+          "x-ms-dataverse-attribute-of": "mserp_addresstimezone",
+          "x-ms-read-only": true
+        },
+        "mserp_addressvalidfrom": {
+          "type": "string",
+          "title": "Effective",
+          "x-ms-dataverse-attribute": "mserp_addressvalidfrom",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_addressvalidfrom"
+        },
+        "mserp_addressvalidto": {
+          "type": "string",
+          "title": "Expiration",
+          "x-ms-dataverse-attribute": "mserp_addressvalidto",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_addressvalidto"
+        },
+        "mserp_addresszipcode": {
+          "type": "string",
+          "title": "ZIP/postal code",
+          "x-ms-dataverse-attribute": "mserp_addresszipcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_addresszipcode",
+          "maxLength": 10
+        },
+        "mserp_arepricesincludingsalestax": {
+          "type": "string",
+          "title": "Prices include sales tax",
+          "x-ms-dataverse-attribute": "mserp_arepricesincludingsalestax",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_arepricesincludingsalestax",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_arepricesincludingsalestaxname": {
+          "type": "string",
+          "title": "mserp_arepricesincludingsalestaxname",
+          "x-ms-dataverse-attribute": "mserp_arepricesincludingsalestaxname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_arepricesincludingsalestaxName",
+          "x-ms-dataverse-attribute-of": "mserp_arepricesincludingsalestax",
+          "x-ms-read-only": true
+        },
+        "mserp_bankaccountid": {
+          "type": "string",
+          "title": "Bank account",
+          "x-ms-dataverse-attribute": "mserp_bankaccountid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_bankaccountid",
+          "maxLength": 10
+        },
+        "mserp_bankorderofpayment": {
+          "type": "string",
+          "title": "Order of payment",
+          "x-ms-dataverse-attribute": "mserp_bankorderofpayment",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_bankorderofpayment",
+          "maxLength": 2
+        },
+        "mserp_banktransactiontype": {
+          "type": "string",
+          "title": "Currency op code",
+          "x-ms-dataverse-attribute": "mserp_banktransactiontype",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_banktransactiontype",
+          "maxLength": 10
+        },
+        "mserp_barcodenumbersequence": {
+          "type": "string",
+          "title": "Bar code number sequence",
+          "x-ms-dataverse-attribute": "mserp_barcodenumbersequence",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_barcodenumbersequence",
+          "maxLength": 10
+        },
+        "mserp_birthcountycode": {
+          "type": "string",
+          "title": "Birth county",
+          "x-ms-dataverse-attribute": "mserp_birthcountycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_birthcountycode",
+          "maxLength": 2
+        },
+        "mserp_birthplace": {
+          "type": "string",
+          "title": "Birth place",
+          "x-ms-dataverse-attribute": "mserp_birthplace",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_birthplace",
+          "maxLength": 60
+        },
+        "mserp_brazilianccm": {
+          "type": "string",
+          "title": "CCM",
+          "x-ms-dataverse-attribute": "mserp_brazilianccm",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_brazilianccm",
+          "maxLength": 20
+        },
+        "mserp_braziliancnae": {
+          "type": "string",
+          "title": "CNAE",
+          "x-ms-dataverse-attribute": "mserp_braziliancnae",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_braziliancnae",
+          "maxLength": 10
+        },
+        "mserp_braziliancnpjorcpf": {
+          "type": "string",
+          "title": "CNPJ/CPF",
+          "x-ms-dataverse-attribute": "mserp_braziliancnpjorcpf",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_braziliancnpjorcpf",
+          "maxLength": 20
+        },
+        "mserp_brazilianie": {
+          "type": "string",
+          "title": "IE",
+          "x-ms-dataverse-attribute": "mserp_brazilianie",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_brazilianie",
+          "maxLength": 20
+        },
+        "mserp_brazilianinsscei": {
+          "type": "string",
+          "title": "INSS-CEI",
+          "x-ms-dataverse-attribute": "mserp_brazilianinsscei",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_brazilianinsscei",
+          "maxLength": 15
+        },
+        "mserp_braziliannit": {
+          "type": "string",
+          "title": "NIT",
+          "x-ms-dataverse-attribute": "mserp_braziliannit",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_braziliannit",
+          "maxLength": 14
+        },
+        "mserp_businesssegmentcode": {
+          "type": "string",
+          "title": "Segment",
+          "x-ms-dataverse-attribute": "mserp_businesssegmentcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_businesssegmentcode",
+          "maxLength": 20
+        },
+        "mserp_businesssubsegmentcode": {
+          "type": "string",
+          "title": "Subsegment",
+          "x-ms-dataverse-attribute": "mserp_businesssubsegmentcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_businesssubsegmentcode",
+          "maxLength": 20
+        },
+        "mserp_buyergroupid": {
+          "type": "string",
+          "title": "Buyer group",
+          "x-ms-dataverse-attribute": "mserp_buyergroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_buyergroupid",
+          "maxLength": 10
+        },
+        "mserp_cashdiscountcode": {
+          "type": "string",
+          "title": "Cash discount",
+          "x-ms-dataverse-attribute": "mserp_cashdiscountcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_cashdiscountcode",
+          "maxLength": 10
+        },
+        "mserp_centralbankpurposecode": {
+          "type": "string",
+          "title": "Central bank purpose code",
+          "x-ms-dataverse-attribute": "mserp_centralbankpurposecode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_centralbankpurposecode",
+          "maxLength": 10
+        },
+        "mserp_centralbankpurposetext": {
+          "type": "string",
+          "title": "Purpose text",
+          "x-ms-dataverse-attribute": "mserp_centralbankpurposetext",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_centralbankpurposetext",
+          "maxLength": 210
+        },
+        "mserp_chargevendorgroupid": {
+          "type": "string",
+          "title": "Charges group",
+          "x-ms-dataverse-attribute": "mserp_chargevendorgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_chargevendorgroupid",
+          "maxLength": 10
+        },
+        "mserp_ciscompanyregistrationnumber": {
+          "type": "string",
+          "title": "Company registration number (CRN)",
+          "x-ms-dataverse-attribute": "mserp_ciscompanyregistrationnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_ciscompanyregistrationnumber",
+          "maxLength": 8
+        },
+        "mserp_cisnationalinsurancenumber": {
+          "type": "string",
+          "title": "National insurance number (NINO)",
+          "x-ms-dataverse-attribute": "mserp_cisnationalinsurancenumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_cisnationalinsurancenumber",
+          "maxLength": 9
+        },
+        "mserp_cisstatus": {
+          "type": "string",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "mserp_cisstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_cisstatus",
+          "enum": [
+            "None",
+            "Gross",
+            "Standard",
+            "Higher"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c97857c5-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_cisstatusname": {
+          "type": "string",
+          "title": "mserp_cisstatusname",
+          "x-ms-dataverse-attribute": "mserp_cisstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_cisstatusName",
+          "x-ms-dataverse-attribute-of": "mserp_cisstatus",
+          "x-ms-read-only": true
+        },
+        "mserp_cisuniquetaxpayerreference": {
+          "type": "string",
+          "title": "Unique tax payer reference (UTR)",
+          "x-ms-dataverse-attribute": "mserp_cisuniquetaxpayerreference",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_cisuniquetaxpayerreference",
+          "maxLength": 10
+        },
+        "mserp_cisverificationdate": {
+          "type": "string",
+          "title": "Verification date",
+          "x-ms-dataverse-attribute": "mserp_cisverificationdate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_cisverificationdate"
+        },
+        "mserp_cisverificationnumber": {
+          "type": "string",
+          "title": "Verification number",
+          "x-ms-dataverse-attribute": "mserp_cisverificationnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_cisverificationnumber",
+          "maxLength": 13
+        },
+        "mserp_clearingperiodpaymenttermsid": {
+          "type": "string",
+          "title": "Time between invoice due date and payment date",
+          "x-ms-dataverse-attribute": "mserp_clearingperiodpaymenttermsid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_clearingperiodpaymenttermsid",
+          "maxLength": 100
+        },
+        "mserp_coloridprefix": {
+          "type": "string",
+          "title": "Color prefix",
+          "x-ms-dataverse-attribute": "mserp_coloridprefix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_coloridprefix",
+          "maxLength": 2
+        },
+        "mserp_commercialregisterinsetnumber": {
+          "type": "string",
+          "title": "Inset number",
+          "x-ms-dataverse-attribute": "mserp_commercialregisterinsetnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_commercialregisterinsetnumber",
+          "maxLength": 10
+        },
+        "mserp_commercialregistername": {
+          "type": "string",
+          "title": "Kept at commercial register",
+          "x-ms-dataverse-attribute": "mserp_commercialregistername",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_commercialregistername",
+          "maxLength": 40
+        },
+        "mserp_commercialregistersection": {
+          "type": "string",
+          "title": "Section of commercial register",
+          "x-ms-dataverse-attribute": "mserp_commercialregistersection",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_commercialregistersection",
+          "maxLength": 10
+        },
+        "mserp_companychainname": {
+          "type": "string",
+          "title": "Chain",
+          "x-ms-dataverse-attribute": "mserp_companychainname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_companychainname",
+          "maxLength": 20
+        },
+        "mserp_companytype": {
+          "type": "string",
+          "title": "Company type",
+          "x-ms-dataverse-attribute": "mserp_companytype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_companytype",
+          "enum": [
+            "Blank",
+            "01: Legal Entity",
+            "02: legal person",
+            "03: foreign company"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "ce7857c5-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Company type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_companytypename": {
+          "type": "string",
+          "title": "mserp_companytypename",
+          "x-ms-dataverse-attribute": "mserp_companytypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_companytypeName",
+          "x-ms-dataverse-attribute-of": "mserp_companytype",
+          "x-ms-read-only": true
+        },
+        "mserp_compositionscheme": {
+          "type": "string",
+          "title": "Composition scheme",
+          "x-ms-dataverse-attribute": "mserp_compositionscheme",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_compositionscheme",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_compositionschemename": {
+          "type": "string",
+          "title": "mserp_compositionschemename",
+          "x-ms-dataverse-attribute": "mserp_compositionschemename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_compositionschemeName",
+          "x-ms-dataverse-attribute-of": "mserp_compositionscheme",
+          "x-ms-read-only": true
+        },
+        "mserp_createbarcodeifneeded": {
+          "type": "string",
+          "title": "Create bar code if needed",
+          "x-ms-dataverse-attribute": "mserp_createbarcodeifneeded",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_createbarcodeifneeded",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_createbarcodeifneededname": {
+          "type": "string",
+          "title": "mserp_createbarcodeifneededname",
+          "x-ms-dataverse-attribute": "mserp_createbarcodeifneededname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_createbarcodeifneededName",
+          "x-ms-dataverse-attribute-of": "mserp_createbarcodeifneeded",
+          "x-ms-read-only": true
+        },
+        "mserp_creditlimit": {
+          "type": "string",
+          "title": "Credit limit",
+          "x-ms-dataverse-attribute": "mserp_creditlimit",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_creditlimit"
+        },
+        "mserp_creditrating": {
+          "type": "string",
+          "title": "Credit rating",
+          "x-ms-dataverse-attribute": "mserp_creditrating",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_creditrating",
+          "maxLength": 10
+        },
+        "mserp_currencycode": {
+          "type": "string",
+          "title": "Currency",
+          "x-ms-dataverse-attribute": "mserp_currencycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_currencycode",
+          "maxLength": 3
+        },
+        "mserp_cusipdetails": {
+          "type": "string",
+          "title": "CUSIP details",
+          "x-ms-dataverse-attribute": "mserp_cusipdetails",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_cusipdetails",
+          "maxLength": 60
+        },
+        "mserp_cusipidentificationnumber": {
+          "type": "string",
+          "title": "CUSIP ID",
+          "x-ms-dataverse-attribute": "mserp_cusipidentificationnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_cusipidentificationnumber",
+          "maxLength": 9
+        },
+        "mserp_dataareaid": {
+          "type": "string",
+          "title": "Company Code",
+          "x-ms-dataverse-attribute": "mserp_dataareaid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dataareaid",
+          "maxLength": 4
+        },
+        "mserp_dataareaid_id": {
+          "type": "string",
+          "title": "Company",
+          "x-ms-dataverse-attribute": "mserp_dataareaid_id",
+          "x-ms-dataverse-type": "LookupType",
+          "x-ms-schema-name": "mserp_dataAreaId_id",
+          "x-ms-dataverse-navigation-properties": [
+            "mserp_dataAreaId_id"
+          ]
+        },
+        "mserp_dataareaid_idname": {
+          "type": "string",
+          "title": "mserp_dataareaid_idname",
+          "x-ms-dataverse-attribute": "mserp_dataareaid_idname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dataAreaId_idName",
+          "x-ms-dataverse-attribute-of": "mserp_dataareaid_id",
+          "x-ms-read-only": true,
+          "maxLength": 20
+        },
+        "mserp_defaultagentvendoraccountnumber": {
+          "type": "string",
+          "title": "Agent",
+          "x-ms-dataverse-attribute": "mserp_defaultagentvendoraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultagentvendoraccountnumber",
+          "maxLength": 20
+        },
+        "mserp_defaultcashdiscountusage": {
+          "type": "string",
+          "title": "Use cash discount",
+          "x-ms-dataverse-attribute": "mserp_defaultcashdiscountusage",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_defaultcashdiscountusage",
+          "enum": [
+            "Normal",
+            "Always",
+            "Never"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "f6f64fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Use cash discount (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_defaultcashdiscountusagename": {
+          "type": "string",
+          "title": "mserp_defaultcashdiscountusagename",
+          "x-ms-dataverse-attribute": "mserp_defaultcashdiscountusagename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_defaultcashdiscountusageName",
+          "x-ms-dataverse-attribute-of": "mserp_defaultcashdiscountusage",
+          "x-ms-read-only": true
+        },
+        "mserp_defaultdeliverymodeid": {
+          "type": "string",
+          "title": "Mode of delivery",
+          "x-ms-dataverse-attribute": "mserp_defaultdeliverymodeid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultdeliverymodeid",
+          "maxLength": 10
+        },
+        "mserp_defaultdeliverytermscode": {
+          "type": "string",
+          "title": "Delivery terms",
+          "x-ms-dataverse-attribute": "mserp_defaultdeliverytermscode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultdeliverytermscode",
+          "maxLength": 10
+        },
+        "mserp_defaultfromshippingportid": {
+          "type": "string",
+          "title": "From port",
+          "x-ms-dataverse-attribute": "mserp_defaultfromshippingportid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultfromshippingportid",
+          "maxLength": 20
+        },
+        "mserp_defaultinventorystatusid": {
+          "type": "string",
+          "title": "Default inventory status ID",
+          "x-ms-dataverse-attribute": "mserp_defaultinventorystatusid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultinventorystatusid",
+          "maxLength": 10
+        },
+        "mserp_defaultledgerdimensiondisplayvalue": {
+          "type": "string",
+          "title": "Default dimension display value",
+          "x-ms-dataverse-attribute": "mserp_defaultledgerdimensiondisplayvalue",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultledgerdimensiondisplayvalue",
+          "maxLength": 500
+        },
+        "mserp_defaultoffsetaccounttype": {
+          "type": "string",
+          "title": "Account type",
+          "x-ms-dataverse-attribute": "mserp_defaultoffsetaccounttype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_defaultoffsetaccounttype",
+          "enum": [
+            "Ledger",
+            "Customer",
+            "Vendor",
+            "Project",
+            "Fixed assets",
+            "Bank",
+            "Fixed asset",
+            "Advance holder",
+            "Deferrals",
+            "Petty cash"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007,
+            200000008,
+            200000009
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "5a8086ad-7102-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Account type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_defaultoffsetaccounttypename": {
+          "type": "string",
+          "title": "mserp_defaultoffsetaccounttypename",
+          "x-ms-dataverse-attribute": "mserp_defaultoffsetaccounttypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_defaultoffsetaccounttypeName",
+          "x-ms-dataverse-attribute-of": "mserp_defaultoffsetaccounttype",
+          "x-ms-read-only": true
+        },
+        "mserp_defaultoffsetledgeraccountdisplayvalue": {
+          "type": "string",
+          "title": "Dimension combination display value",
+          "x-ms-dataverse-attribute": "mserp_defaultoffsetledgeraccountdisplayvalue",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultoffsetledgeraccountdisplayvalue",
+          "maxLength": 500
+        },
+        "mserp_defaultpaymentdayname": {
+          "type": "string",
+          "title": "Payment day",
+          "x-ms-dataverse-attribute": "mserp_defaultpaymentdayname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultpaymentdayname",
+          "maxLength": 10
+        },
+        "mserp_defaultpaymentschedulename": {
+          "type": "string",
+          "title": "Payment schedule",
+          "x-ms-dataverse-attribute": "mserp_defaultpaymentschedulename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultpaymentschedulename",
+          "maxLength": 30
+        },
+        "mserp_defaultpaymenttermsname": {
+          "type": "string",
+          "title": "Terms of payment",
+          "x-ms-dataverse-attribute": "mserp_defaultpaymenttermsname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultpaymenttermsname",
+          "maxLength": 100
+        },
+        "mserp_defaultprocumentwarehouseid": {
+          "type": "string",
+          "title": "Warehouse",
+          "x-ms-dataverse-attribute": "mserp_defaultprocumentwarehouseid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultprocumentwarehouseid",
+          "maxLength": 10
+        },
+        "mserp_defaultpurchaseorderpoolid": {
+          "type": "string",
+          "title": "Purchase pool",
+          "x-ms-dataverse-attribute": "mserp_defaultpurchaseorderpoolid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultpurchaseorderpoolid",
+          "maxLength": 10
+        },
+        "mserp_defaultpurchasesiteid": {
+          "type": "string",
+          "title": "Site",
+          "x-ms-dataverse-attribute": "mserp_defaultpurchasesiteid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultpurchasesiteid",
+          "maxLength": 10
+        },
+        "mserp_defaultsupplementaryproductvendorgroupid": {
+          "type": "string",
+          "title": "Supplementary item group",
+          "x-ms-dataverse-attribute": "mserp_defaultsupplementaryproductvendorgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultsupplementaryproductvendorgroupid",
+          "maxLength": 10
+        },
+        "mserp_defaulttotaldiscountvendorgroupcode": {
+          "type": "string",
+          "title": "Total discount group",
+          "x-ms-dataverse-attribute": "mserp_defaulttotaldiscountvendorgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaulttotaldiscountvendorgroupcode",
+          "maxLength": 10
+        },
+        "mserp_defaultvendorpaymentmethodname": {
+          "type": "string",
+          "title": "Method of payment",
+          "x-ms-dataverse-attribute": "mserp_defaultvendorpaymentmethodname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_defaultvendorpaymentmethodname",
+          "maxLength": 10
+        },
+        "mserp_destinationcode": {
+          "type": "string",
+          "title": "Destination code",
+          "x-ms-dataverse-attribute": "mserp_destinationcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_destinationcode",
+          "maxLength": 10
+        },
+        "mserp_diotcountrycode": {
+          "type": "string",
+          "title": "Country/region code",
+          "x-ms-dataverse-attribute": "mserp_diotcountrycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_diotcountrycode",
+          "maxLength": 10
+        },
+        "mserp_diotoperationtype": {
+          "type": "string",
+          "title": "Type of operation",
+          "x-ms-dataverse-attribute": "mserp_diotoperationtype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_diotoperationtype",
+          "enum": [
+            "Blank",
+            "02: Sales of goods",
+            "03: professional services",
+            "06: rent/lease",
+            "07: Import of goods or services",
+            "08: Import for virtual transfer",
+            "85: Others",
+            "87: Global operations"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "3b7a57c5-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Type of operation (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_diotoperationtypename": {
+          "type": "string",
+          "title": "mserp_diotoperationtypename",
+          "x-ms-dataverse-attribute": "mserp_diotoperationtypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_diotoperationtypeName",
+          "x-ms-dataverse-attribute-of": "mserp_diotoperationtype",
+          "x-ms-read-only": true
+        },
+        "mserp_diotvendortype": {
+          "type": "string",
+          "title": "Type of vendor",
+          "x-ms-dataverse-attribute": "mserp_diotvendortype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_diotvendortype",
+          "enum": [
+            "Blank",
+            "04: domestic vendor",
+            "05: foreign vendor",
+            "15: global vendor"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "fef64fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Type of vendor (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_diotvendortypename": {
+          "type": "string",
+          "title": "mserp_diotvendortypename",
+          "x-ms-dataverse-attribute": "mserp_diotvendortypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_diotvendortypeName",
+          "x-ms-dataverse-attribute-of": "mserp_diotvendortype",
+          "x-ms-read-only": true
+        },
+        "mserp_dunsnumber": {
+          "type": "string",
+          "title": "DUNS number",
+          "x-ms-dataverse-attribute": "mserp_dunsnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_dunsnumber",
+          "maxLength": 9
+        },
+        "mserp_electroniclocationid": {
+          "type": "string",
+          "title": "Location ID",
+          "x-ms-dataverse-attribute": "mserp_electroniclocationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_electroniclocationid",
+          "maxLength": 40
+        },
+        "mserp_enterprisenumber": {
+          "type": "string",
+          "title": "Enterprise number",
+          "x-ms-dataverse-attribute": "mserp_enterprisenumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_enterprisenumber",
+          "x-ms-read-only": true,
+          "maxLength": 50
+        },
+        "mserp_ethnicoriginid": {
+          "type": "string",
+          "title": "Ethnic origin",
+          "x-ms-dataverse-attribute": "mserp_ethnicoriginid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_ethnicoriginid",
+          "maxLength": 15
+        },
+        "mserp_exchangerate": {
+          "type": "string",
+          "title": "Fixed exchange rate",
+          "x-ms-dataverse-attribute": "mserp_exchangerate",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_exchangerate"
+        },
+        "mserp_factoringvendoraccountnumber": {
+          "type": "string",
+          "title": "Factoring account",
+          "x-ms-dataverse-attribute": "mserp_factoringvendoraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_factoringvendoraccountnumber",
+          "maxLength": 20
+        },
+        "mserp_fiscalcode": {
+          "type": "string",
+          "title": "Fiscal code",
+          "x-ms-dataverse-attribute": "mserp_fiscalcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_fiscalcode",
+          "maxLength": 16
+        },
+        "mserp_fiscaldocumentincomecode": {
+          "type": "string",
+          "title": "Income code",
+          "x-ms-dataverse-attribute": "mserp_fiscaldocumentincomecode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_fiscaldocumentincomecode",
+          "maxLength": 10
+        },
+        "mserp_fiscaloperationpresencetype": {
+          "type": "string",
+          "title": "Presence type",
+          "x-ms-dataverse-attribute": "mserp_fiscaloperationpresencetype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_fiscaloperationpresencetype",
+          "enum": [
+            "Does not apply",
+            "In person",
+            "Internet",
+            "Telesales",
+            "In person outside of fiscal establishment",
+            "Others"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "52af56d1-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Presence type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_fiscaloperationpresencetypename": {
+          "type": "string",
+          "title": "mserp_fiscaloperationpresencetypename",
+          "x-ms-dataverse-attribute": "mserp_fiscaloperationpresencetypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_fiscaloperationpresencetypeName",
+          "x-ms-dataverse-attribute-of": "mserp_fiscaloperationpresencetype",
+          "x-ms-read-only": true
+        },
+        "mserp_fixedexchangerate": {
+          "type": "string",
+          "title": "Fixed rate",
+          "x-ms-dataverse-attribute": "mserp_fixedexchangerate",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_fixedexchangerate",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_fixedexchangeratename": {
+          "type": "string",
+          "title": "mserp_fixedexchangeratename",
+          "x-ms-dataverse-attribute": "mserp_fixedexchangeratename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_fixedexchangerateName",
+          "x-ms-dataverse-attribute-of": "mserp_fixedexchangerate",
+          "x-ms-read-only": true
+        },
+        "mserp_foreignerid": {
+          "type": "string",
+          "title": "Foreigner ID",
+          "x-ms-dataverse-attribute": "mserp_foreignerid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_foreignerid",
+          "maxLength": 20
+        },
+        "mserp_foreignresident": {
+          "type": "string",
+          "title": "Foreign counteragent",
+          "x-ms-dataverse-attribute": "mserp_foreignresident",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_foreignresident",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_foreignresidentname": {
+          "type": "string",
+          "title": "mserp_foreignresidentname",
+          "x-ms-dataverse-attribute": "mserp_foreignresidentname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_foreignresidentName",
+          "x-ms-dataverse-attribute-of": "mserp_foreignresident",
+          "x-ms-read-only": true
+        },
+        "mserp_foreignvendor": {
+          "type": "string",
+          "title": "Foreign vendor",
+          "x-ms-dataverse-attribute": "mserp_foreignvendor",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_foreignvendor",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_foreignvendorname": {
+          "type": "string",
+          "title": "mserp_foreignvendorname",
+          "x-ms-dataverse-attribute": "mserp_foreignvendorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_foreignvendorName",
+          "x-ms-dataverse-attribute-of": "mserp_foreignvendor",
+          "x-ms-read-only": true
+        },
+        "mserp_foreignvendortaxregistrationid": {
+          "type": "string",
+          "title": "Tax registration ID",
+          "x-ms-dataverse-attribute": "mserp_foreignvendortaxregistrationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_foreignvendortaxregistrationid",
+          "maxLength": 40
+        },
+        "mserp_formattedprimaryaddress": {
+          "type": "string",
+          "title": "FormattedPrimaryAddress",
+          "x-ms-dataverse-attribute": "mserp_formattedprimaryaddress",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_formattedprimaryaddress",
+          "maxLength": 250
+        },
+        "mserp_gtavendor": {
+          "type": "string",
+          "title": "GTA – commercial vendor",
+          "x-ms-dataverse-attribute": "mserp_gtavendor",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_gtavendor",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_gtavendorname": {
+          "type": "string",
+          "title": "mserp_gtavendorname",
+          "x-ms-dataverse-attribute": "mserp_gtavendorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_gtavendorName",
+          "x-ms-dataverse-attribute-of": "mserp_gtavendor",
+          "x-ms-read-only": true
+        },
+        "mserp_hasonlytakenbids": {
+          "type": "string",
+          "title": "Bid only",
+          "x-ms-dataverse-attribute": "mserp_hasonlytakenbids",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_hasonlytakenbids",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_hasonlytakenbidsname": {
+          "type": "string",
+          "title": "mserp_hasonlytakenbidsname",
+          "x-ms-dataverse-attribute": "mserp_hasonlytakenbidsname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_hasonlytakenbidsName",
+          "x-ms-dataverse-attribute-of": "mserp_hasonlytakenbids",
+          "x-ms-read-only": true
+        },
+        "mserp_inventoryprofile": {
+          "type": "string",
+          "title": "Inventory profile",
+          "x-ms-dataverse-attribute": "mserp_inventoryprofile",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_inventoryprofile",
+          "maxLength": 10
+        },
+        "mserp_inventoryprofiletype": {
+          "type": "string",
+          "title": "Kind of activity",
+          "x-ms-dataverse-attribute": "mserp_inventoryprofiletype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_inventoryprofiletype",
+          "enum": [
+            "Unspecified",
+            "Basic",
+            "Commission agent",
+            "Principal's agent",
+            "Bailee"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "1f2d67d7-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Kind of activity (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_inventoryprofiletypename": {
+          "type": "string",
+          "title": "mserp_inventoryprofiletypename",
+          "x-ms-dataverse-attribute": "mserp_inventoryprofiletypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_inventoryprofiletypeName",
+          "x-ms-dataverse-attribute-of": "mserp_inventoryprofiletype",
+          "x-ms-read-only": true
+        },
+        "mserp_invoicevendoraccountnumber": {
+          "type": "string",
+          "title": "Invoice account",
+          "x-ms-dataverse-attribute": "mserp_invoicevendoraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_invoicevendoraccountnumber",
+          "maxLength": 20
+        },
+        "mserp_ischangemanagementactivated": {
+          "type": "string",
+          "title": "Activate change management",
+          "x-ms-dataverse-attribute": "mserp_ischangemanagementactivated",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ischangemanagementactivated",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ischangemanagementactivatedname": {
+          "type": "string",
+          "title": "mserp_ischangemanagementactivatedname",
+          "x-ms-dataverse-attribute": "mserp_ischangemanagementactivatedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ischangemanagementactivatedName",
+          "x-ms-dataverse-attribute-of": "mserp_ischangemanagementactivated",
+          "x-ms-read-only": true
+        },
+        "mserp_ischangemangementoverridebyvendorallowed": {
+          "type": "string",
+          "title": "Override settings",
+          "x-ms-dataverse-attribute": "mserp_ischangemangementoverridebyvendorallowed",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ischangemangementoverridebyvendorallowed",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ischangemangementoverridebyvendorallowedname": {
+          "type": "string",
+          "title": "mserp_ischangemangementoverridebyvendorallowedname",
+          "x-ms-dataverse-attribute": "mserp_ischangemangementoverridebyvendorallowedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ischangemangementoverridebyvendorallowedName",
+          "x-ms-dataverse-attribute-of": "mserp_ischangemangementoverridebyvendorallowed",
+          "x-ms-read-only": true
+        },
+        "mserp_iscusipidentificationnumberapplicable": {
+          "type": "string",
+          "title": "CUSIP",
+          "x-ms-dataverse-attribute": "mserp_iscusipidentificationnumberapplicable",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_iscusipidentificationnumberapplicable",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_iscusipidentificationnumberapplicablename": {
+          "type": "string",
+          "title": "mserp_iscusipidentificationnumberapplicablename",
+          "x-ms-dataverse-attribute": "mserp_iscusipidentificationnumberapplicablename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_iscusipidentificationnumberapplicableName",
+          "x-ms-dataverse-attribute-of": "mserp_iscusipidentificationnumberapplicable",
+          "x-ms-read-only": true
+        },
+        "mserp_isflaggedwithsecondtin": {
+          "type": "string",
+          "title": "Second TIN",
+          "x-ms-dataverse-attribute": "mserp_isflaggedwithsecondtin",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isflaggedwithsecondtin",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isflaggedwithsecondtinname": {
+          "type": "string",
+          "title": "mserp_isflaggedwithsecondtinname",
+          "x-ms-dataverse-attribute": "mserp_isflaggedwithsecondtinname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isflaggedwithsecondtinName",
+          "x-ms-dataverse-attribute-of": "mserp_isflaggedwithsecondtin",
+          "x-ms-read-only": true
+        },
+        "mserp_isforeignentity": {
+          "type": "string",
+          "title": "Foreign entity indicator",
+          "x-ms-dataverse-attribute": "mserp_isforeignentity",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isforeignentity",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isforeignentityname": {
+          "type": "string",
+          "title": "mserp_isforeignentityname",
+          "x-ms-dataverse-attribute": "mserp_isforeignentityname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isforeignentityName",
+          "x-ms-dataverse-attribute-of": "mserp_isforeignentity",
+          "x-ms-read-only": true
+        },
+        "mserp_isgstcompositionschemeenabled": {
+          "type": "string",
+          "title": "GST composition scheme",
+          "x-ms-dataverse-attribute": "mserp_isgstcompositionschemeenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isgstcompositionschemeenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isgstcompositionschemeenabledname": {
+          "type": "string",
+          "title": "mserp_isgstcompositionschemeenabledname",
+          "x-ms-dataverse-attribute": "mserp_isgstcompositionschemeenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isgstcompositionschemeenabledName",
+          "x-ms-dataverse-attribute-of": "mserp_isgstcompositionschemeenabled",
+          "x-ms-read-only": true
+        },
+        "mserp_isicmscontributor": {
+          "type": "string",
+          "title": "ICMS contributor",
+          "x-ms-dataverse-attribute": "mserp_isicmscontributor",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isicmscontributor",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isicmscontributorname": {
+          "type": "string",
+          "title": "mserp_isicmscontributorname",
+          "x-ms-dataverse-attribute": "mserp_isicmscontributorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isicmscontributorName",
+          "x-ms-dataverse-attribute-of": "mserp_isicmscontributor",
+          "x-ms-read-only": true
+        },
+        "mserp_isimportcostingvendor": {
+          "type": "string",
+          "title": "Import costing vendor",
+          "x-ms-dataverse-attribute": "mserp_isimportcostingvendor",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isimportcostingvendor",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isimportcostingvendorname": {
+          "type": "string",
+          "title": "mserp_isimportcostingvendorname",
+          "x-ms-dataverse-attribute": "mserp_isimportcostingvendorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isimportcostingvendorName",
+          "x-ms-dataverse-attribute-of": "mserp_isimportcostingvendor",
+          "x-ms-read-only": true
+        },
+        "mserp_isincomingfiscaldocumentgenerated": {
+          "type": "string",
+          "title": "Generate incoming fiscal document",
+          "x-ms-dataverse-attribute": "mserp_isincomingfiscaldocumentgenerated",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isincomingfiscaldocumentgenerated",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isincomingfiscaldocumentgeneratedname": {
+          "type": "string",
+          "title": "mserp_isincomingfiscaldocumentgeneratedname",
+          "x-ms-dataverse-attribute": "mserp_isincomingfiscaldocumentgeneratedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isincomingfiscaldocumentgeneratedName",
+          "x-ms-dataverse-attribute-of": "mserp_isincomingfiscaldocumentgenerated",
+          "x-ms-read-only": true
+        },
+        "mserp_isminorityowned": {
+          "type": "string",
+          "title": "Minority owned",
+          "x-ms-dataverse-attribute": "mserp_isminorityowned",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isminorityowned",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isminorityownedname": {
+          "type": "string",
+          "title": "mserp_isminorityownedname",
+          "x-ms-dataverse-attribute": "mserp_isminorityownedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isminorityownedName",
+          "x-ms-dataverse-attribute-of": "mserp_isminorityowned",
+          "x-ms-read-only": true
+        },
+        "mserp_isnationalregistrynumber": {
+          "type": "string",
+          "title": "National Registry number",
+          "x-ms-dataverse-attribute": "mserp_isnationalregistrynumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_isnationalregistrynumber",
+          "maxLength": 10
+        },
+        "mserp_isonetimevendor": {
+          "type": "string",
+          "title": "One-time supplier",
+          "x-ms-dataverse-attribute": "mserp_isonetimevendor",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isonetimevendor",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isonetimevendorname": {
+          "type": "string",
+          "title": "mserp_isonetimevendorname",
+          "x-ms-dataverse-attribute": "mserp_isonetimevendorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isonetimevendorName",
+          "x-ms-dataverse-attribute-of": "mserp_isonetimevendor",
+          "x-ms-read-only": true
+        },
+        "mserp_isownerdisabled": {
+          "type": "string",
+          "title": "Owner is disabled",
+          "x-ms-dataverse-attribute": "mserp_isownerdisabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isownerdisabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isownerdisabledname": {
+          "type": "string",
+          "title": "mserp_isownerdisabledname",
+          "x-ms-dataverse-attribute": "mserp_isownerdisabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isownerdisabledName",
+          "x-ms-dataverse-attribute-of": "mserp_isownerdisabled",
+          "x-ms-read-only": true
+        },
+        "mserp_isprimaryemailaddressimenabled": {
+          "type": "string",
+          "title": "Email is instant message",
+          "x-ms-dataverse-attribute": "mserp_isprimaryemailaddressimenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isprimaryemailaddressimenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isprimaryemailaddressimenabledname": {
+          "type": "string",
+          "title": "mserp_isprimaryemailaddressimenabledname",
+          "x-ms-dataverse-attribute": "mserp_isprimaryemailaddressimenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isprimaryemailaddressimenabledName",
+          "x-ms-dataverse-attribute-of": "mserp_isprimaryemailaddressimenabled",
+          "x-ms-read-only": true
+        },
+        "mserp_isprimaryphonenumbermobile": {
+          "type": "string",
+          "title": "Phone is mobile",
+          "x-ms-dataverse-attribute": "mserp_isprimaryphonenumbermobile",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isprimaryphonenumbermobile",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isprimaryphonenumbermobilename": {
+          "type": "string",
+          "title": "mserp_isprimaryphonenumbermobilename",
+          "x-ms-dataverse-attribute": "mserp_isprimaryphonenumbermobilename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isprimaryphonenumbermobileName",
+          "x-ms-dataverse-attribute-of": "mserp_isprimaryphonenumbermobile",
+          "x-ms-read-only": true
+        },
+        "mserp_ispublicsector_it": {
+          "type": "string",
+          "title": "Public sector",
+          "x-ms-dataverse-attribute": "mserp_ispublicsector_it",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ispublicsector_it",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ispublicsector_itname": {
+          "type": "string",
+          "title": "mserp_ispublicsector_itname",
+          "x-ms-dataverse-attribute": "mserp_ispublicsector_itname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ispublicsector_itName",
+          "x-ms-dataverse-attribute-of": "mserp_ispublicsector_it",
+          "x-ms-read-only": true
+        },
+        "mserp_ispurchaseconsumed": {
+          "type": "string",
+          "title": "Use and consumption",
+          "x-ms-dataverse-attribute": "mserp_ispurchaseconsumed",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ispurchaseconsumed",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ispurchaseconsumedname": {
+          "type": "string",
+          "title": "mserp_ispurchaseconsumedname",
+          "x-ms-dataverse-attribute": "mserp_ispurchaseconsumedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ispurchaseconsumedName",
+          "x-ms-dataverse-attribute-of": "mserp_ispurchaseconsumed",
+          "x-ms-read-only": true
+        },
+        "mserp_ispurchaseorderchangerequestoverrideallowed": {
+          "type": "string",
+          "title": "Allow override of settings per purchase order",
+          "x-ms-dataverse-attribute": "mserp_ispurchaseorderchangerequestoverrideallowed",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ispurchaseorderchangerequestoverrideallowed",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ispurchaseorderchangerequestoverrideallowedname": {
+          "type": "string",
+          "title": "mserp_ispurchaseorderchangerequestoverrideallowedname",
+          "x-ms-dataverse-attribute": "mserp_ispurchaseorderchangerequestoverrideallowedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ispurchaseorderchangerequestoverrideallowedName",
+          "x-ms-dataverse-attribute-of": "mserp_ispurchaseorderchangerequestoverrideallowed",
+          "x-ms-read-only": true
+        },
+        "mserp_isreportingtax1099": {
+          "type": "string",
+          "title": "Report 1099",
+          "x-ms-dataverse-attribute": "mserp_isreportingtax1099",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isreportingtax1099",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isreportingtax1099name": {
+          "type": "string",
+          "title": "mserp_isreportingtax1099name",
+          "x-ms-dataverse-attribute": "mserp_isreportingtax1099name",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isreportingtax1099Name",
+          "x-ms-dataverse-attribute-of": "mserp_isreportingtax1099",
+          "x-ms-read-only": true
+        },
+        "mserp_isservicedeliveryaddressbased": {
+          "type": "string",
+          "title": "Service on delivery address",
+          "x-ms-dataverse-attribute": "mserp_isservicedeliveryaddressbased",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isservicedeliveryaddressbased",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isservicedeliveryaddressbasedname": {
+          "type": "string",
+          "title": "mserp_isservicedeliveryaddressbasedname",
+          "x-ms-dataverse-attribute": "mserp_isservicedeliveryaddressbasedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isservicedeliveryaddressbasedName",
+          "x-ms-dataverse-attribute-of": "mserp_isservicedeliveryaddressbased",
+          "x-ms-read-only": true
+        },
+        "mserp_isserviceveteranowned": {
+          "type": "string",
+          "title": "Owner is a service veteran",
+          "x-ms-dataverse-attribute": "mserp_isserviceveteranowned",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isserviceveteranowned",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isserviceveteranownedname": {
+          "type": "string",
+          "title": "mserp_isserviceveteranownedname",
+          "x-ms-dataverse-attribute": "mserp_isserviceveteranownedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isserviceveteranownedName",
+          "x-ms-dataverse-attribute-of": "mserp_isserviceveteranowned",
+          "x-ms-read-only": true
+        },
+        "mserp_issmallbusiness": {
+          "type": "string",
+          "title": "Small business",
+          "x-ms-dataverse-attribute": "mserp_issmallbusiness",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_issmallbusiness",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_issmallbusinessname": {
+          "type": "string",
+          "title": "mserp_issmallbusinessname",
+          "x-ms-dataverse-attribute": "mserp_issmallbusinessname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_issmallbusinessName",
+          "x-ms-dataverse-attribute-of": "mserp_issmallbusiness",
+          "x-ms-read-only": true
+        },
+        "mserp_issubcontractor": {
+          "type": "string",
+          "title": "Subcontractor",
+          "x-ms-dataverse-attribute": "mserp_issubcontractor",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_issubcontractor",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_issubcontractorname": {
+          "type": "string",
+          "title": "mserp_issubcontractorname",
+          "x-ms-dataverse-attribute": "mserp_issubcontractorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_issubcontractorName",
+          "x-ms-dataverse-attribute-of": "mserp_issubcontractor",
+          "x-ms-read-only": true
+        },
+        "mserp_istaxationoverpayroll_br": {
+          "type": "string",
+          "title": "Taxation over payroll",
+          "x-ms-dataverse-attribute": "mserp_istaxationoverpayroll_br",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_istaxationoverpayroll_br",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_istaxationoverpayroll_brname": {
+          "type": "string",
+          "title": "mserp_istaxationoverpayroll_brname",
+          "x-ms-dataverse-attribute": "mserp_istaxationoverpayroll_brname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_istaxationoverpayroll_brName",
+          "x-ms-dataverse-attribute-of": "mserp_istaxationoverpayroll_br",
+          "x-ms-read-only": true
+        },
+        "mserp_istransportationservicesprovider": {
+          "type": "string",
+          "title": "Services provider",
+          "x-ms-dataverse-attribute": "mserp_istransportationservicesprovider",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_istransportationservicesprovider",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_istransportationservicesprovidername": {
+          "type": "string",
+          "title": "mserp_istransportationservicesprovidername",
+          "x-ms-dataverse-attribute": "mserp_istransportationservicesprovidername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_istransportationservicesproviderName",
+          "x-ms-dataverse-attribute-of": "mserp_istransportationservicesprovider",
+          "x-ms-read-only": true
+        },
+        "mserp_isvendorlocallyowned": {
+          "type": "string",
+          "title": "Locally owned",
+          "x-ms-dataverse-attribute": "mserp_isvendorlocallyowned",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isvendorlocallyowned",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isvendorlocallyownedname": {
+          "type": "string",
+          "title": "mserp_isvendorlocallyownedname",
+          "x-ms-dataverse-attribute": "mserp_isvendorlocallyownedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isvendorlocallyownedName",
+          "x-ms-dataverse-attribute-of": "mserp_isvendorlocallyowned",
+          "x-ms-read-only": true
+        },
+        "mserp_isvendorlocatedinhubzone": {
+          "type": "string",
+          "title": "HUBZone",
+          "x-ms-dataverse-attribute": "mserp_isvendorlocatedinhubzone",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isvendorlocatedinhubzone",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isvendorlocatedinhubzonename": {
+          "type": "string",
+          "title": "mserp_isvendorlocatedinhubzonename",
+          "x-ms-dataverse-attribute": "mserp_isvendorlocatedinhubzonename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isvendorlocatedinhubzoneName",
+          "x-ms-dataverse-attribute-of": "mserp_isvendorlocatedinhubzone",
+          "x-ms-read-only": true
+        },
+        "mserp_isvendorpayingbankpaymentfee": {
+          "type": "string",
+          "title": "Vendor pays payment fee",
+          "x-ms-dataverse-attribute": "mserp_isvendorpayingbankpaymentfee",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isvendorpayingbankpaymentfee",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isvendorpayingbankpaymentfeename": {
+          "type": "string",
+          "title": "mserp_isvendorpayingbankpaymentfeename",
+          "x-ms-dataverse-attribute": "mserp_isvendorpayingbankpaymentfeename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isvendorpayingbankpaymentfeeName",
+          "x-ms-dataverse-attribute-of": "mserp_isvendorpayingbankpaymentfee",
+          "x-ms-read-only": true
+        },
+        "mserp_isw9checkingenabled": {
+          "type": "string",
+          "title": "Check for W-9",
+          "x-ms-dataverse-attribute": "mserp_isw9checkingenabled",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isw9checkingenabled",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isw9checkingenabledname": {
+          "type": "string",
+          "title": "mserp_isw9checkingenabledname",
+          "x-ms-dataverse-attribute": "mserp_isw9checkingenabledname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isw9checkingenabledName",
+          "x-ms-dataverse-attribute-of": "mserp_isw9checkingenabled",
+          "x-ms-read-only": true
+        },
+        "mserp_isw9received": {
+          "type": "string",
+          "title": "W-9 received",
+          "x-ms-dataverse-attribute": "mserp_isw9received",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_isw9received",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_isw9receivedname": {
+          "type": "string",
+          "title": "mserp_isw9receivedname",
+          "x-ms-dataverse-attribute": "mserp_isw9receivedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_isw9receivedName",
+          "x-ms-dataverse-attribute-of": "mserp_isw9received",
+          "x-ms-read-only": true
+        },
+        "mserp_iswithholdingtaxcalculated": {
+          "type": "string",
+          "title": "Calculate withholding tax",
+          "x-ms-dataverse-attribute": "mserp_iswithholdingtaxcalculated",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_iswithholdingtaxcalculated",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_iswithholdingtaxcalculatedname": {
+          "type": "string",
+          "title": "mserp_iswithholdingtaxcalculatedname",
+          "x-ms-dataverse-attribute": "mserp_iswithholdingtaxcalculatedname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_iswithholdingtaxcalculatedName",
+          "x-ms-dataverse-attribute-of": "mserp_iswithholdingtaxcalculated",
+          "x-ms-read-only": true
+        },
+        "mserp_iswomanowner": {
+          "type": "string",
+          "title": "Woman owner",
+          "x-ms-dataverse-attribute": "mserp_iswomanowner",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_iswomanowner",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_iswomanownername": {
+          "type": "string",
+          "title": "mserp_iswomanownername",
+          "x-ms-dataverse-attribute": "mserp_iswomanownername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_iswomanownerName",
+          "x-ms-dataverse-attribute-of": "mserp_iswomanowner",
+          "x-ms-read-only": true
+        },
+        "mserp_languageid": {
+          "type": "string",
+          "title": "Language",
+          "x-ms-dataverse-attribute": "mserp_languageid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_languageid",
+          "maxLength": 7
+        },
+        "mserp_linediscountvendorgroupcode": {
+          "type": "string",
+          "title": "Line discount group",
+          "x-ms-dataverse-attribute": "mserp_linediscountvendorgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_linediscountvendorgroupcode",
+          "maxLength": 10
+        },
+        "mserp_lineofbusinessid": {
+          "type": "string",
+          "title": "Line of business",
+          "x-ms-dataverse-attribute": "mserp_lineofbusinessid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_lineofbusinessid",
+          "maxLength": 10
+        },
+        "mserp_maincontactpersonnelnumber": {
+          "type": "string",
+          "title": "Employee responsible",
+          "x-ms-dataverse-attribute": "mserp_maincontactpersonnelnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_maincontactpersonnelnumber",
+          "maxLength": 25
+        },
+        "mserp_multilinediscountvendorgroupcode": {
+          "type": "string",
+          "title": "Multiline discount",
+          "x-ms-dataverse-attribute": "mserp_multilinediscountvendorgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_multilinediscountvendorgroupcode",
+          "maxLength": 10
+        },
+        "mserp_nafcode": {
+          "type": "string",
+          "title": "NAF code",
+          "x-ms-dataverse-attribute": "mserp_nafcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_nafcode",
+          "maxLength": 5
+        },
+        "mserp_namecontrol": {
+          "type": "string",
+          "title": "Name control",
+          "x-ms-dataverse-attribute": "mserp_namecontrol",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_namecontrol",
+          "maxLength": 4
+        },
+        "mserp_nationality": {
+          "type": "string",
+          "title": "Nationality",
+          "x-ms-dataverse-attribute": "mserp_nationality",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_nationality",
+          "maxLength": 50
+        },
+        "mserp_nationalregistrynumberid": {
+          "type": "string",
+          "title": "National Registry number",
+          "x-ms-dataverse-attribute": "mserp_nationalregistrynumberid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_nationalregistrynumberid",
+          "maxLength": 10
+        },
+        "mserp_natureofassessee": {
+          "type": "string",
+          "title": "Nature of assessee",
+          "x-ms-dataverse-attribute": "mserp_natureofassessee",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_natureofassessee",
+          "enum": [
+            "Company",
+            "HUF",
+            "Firm",
+            "Individual",
+            "AOP",
+            "BOI",
+            "Local authority",
+            "Others"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c6af56d1-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Nature of assessee (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_natureofassesseename": {
+          "type": "string",
+          "title": "mserp_natureofassesseename",
+          "x-ms-dataverse-attribute": "mserp_natureofassesseename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_natureofassesseeName",
+          "x-ms-dataverse-attribute-of": "mserp_natureofassessee",
+          "x-ms-read-only": true
+        },
+        "mserp_notes": {
+          "type": "string",
+          "title": "Notes",
+          "x-ms-dataverse-attribute": "mserp_notes",
+          "x-ms-dataverse-type": "MemoType",
+          "x-ms-schema-name": "mserp_notes",
+          "maxLength": 1048576
+        },
+        "mserp_numbersequencegroupid": {
+          "type": "string",
+          "title": "Number sequence group",
+          "x-ms-dataverse-attribute": "mserp_numbersequencegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_numbersequencegroupid",
+          "maxLength": 10
+        },
+        "mserp_oidinvestortype": {
+          "type": "string",
+          "title": "Investor type",
+          "x-ms-dataverse-attribute": "mserp_oidinvestortype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_oidinvestortype",
+          "enum": [
+            "None",
+            "Owner",
+            "Nominee/broker"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "24af56d1-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Investor type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_oidinvestortypename": {
+          "type": "string",
+          "title": "mserp_oidinvestortypename",
+          "x-ms-dataverse-attribute": "mserp_oidinvestortypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_oidinvestortypeName",
+          "x-ms-dataverse-attribute-of": "mserp_oidinvestortype",
+          "x-ms-read-only": true
+        },
+        "mserp_oidnomineedetails": {
+          "type": "string",
+          "title": "Nominee details",
+          "x-ms-dataverse-attribute": "mserp_oidnomineedetails",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_oidnomineedetails",
+          "maxLength": 60
+        },
+        "mserp_onholdstatus": {
+          "type": "string",
+          "title": "Vendor hold",
+          "x-ms-dataverse-attribute": "mserp_onholdstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_onholdstatus",
+          "enum": [
+            "No",
+            "Invoice",
+            "All",
+            "Payment",
+            "Requisition",
+            "Never",
+            "Purchase order"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "a37857c5-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Stopped (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_onholdstatusname": {
+          "type": "string",
+          "title": "mserp_onholdstatusname",
+          "x-ms-dataverse-attribute": "mserp_onholdstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_onholdstatusName",
+          "x-ms-dataverse-attribute-of": "mserp_onholdstatus",
+          "x-ms-read-only": true
+        },
+        "mserp_organizationabccode": {
+          "type": "string",
+          "title": "ABC code",
+          "x-ms-dataverse-attribute": "mserp_organizationabccode",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_organizationabccode",
+          "enum": [
+            "None",
+            "A",
+            "B",
+            "C"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c32e32a9-7b02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "ABC code (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_organizationabccodename": {
+          "type": "string",
+          "title": "mserp_organizationabccodename",
+          "x-ms-dataverse-attribute": "mserp_organizationabccodename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_organizationabccodeName",
+          "x-ms-dataverse-attribute-of": "mserp_organizationabccode",
+          "x-ms-read-only": true
+        },
+        "mserp_organizationemployeeamount": {
+          "type": "string",
+          "title": "Number of employees",
+          "x-ms-dataverse-attribute": "mserp_organizationemployeeamount",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_organizationemployeeamount"
+        },
+        "mserp_organizationnumber": {
+          "type": "string",
+          "title": "Organization number",
+          "x-ms-dataverse-attribute": "mserp_organizationnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_organizationnumber",
+          "maxLength": 25
+        },
+        "mserp_organizationphoneticname": {
+          "type": "string",
+          "title": "Phonetic name",
+          "x-ms-dataverse-attribute": "mserp_organizationphoneticname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_organizationphoneticname",
+          "maxLength": 160
+        },
+        "mserp_ouraccountnumber": {
+          "type": "string",
+          "title": "Our account number",
+          "x-ms-dataverse-attribute": "mserp_ouraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_ouraccountnumber",
+          "maxLength": 20
+        },
+        "mserp_overridesalestax": {
+          "type": "string",
+          "title": "Override sales tax",
+          "x-ms-dataverse-attribute": "mserp_overridesalestax",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_overridesalestax",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_overridesalestaxname": {
+          "type": "string",
+          "title": "mserp_overridesalestaxname",
+          "x-ms-dataverse-attribute": "mserp_overridesalestaxname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_overridesalestaxName",
+          "x-ms-dataverse-attribute-of": "mserp_overridesalestax",
+          "x-ms-read-only": true
+        },
+        "mserp_pannumber": {
+          "type": "string",
+          "title": "Number",
+          "x-ms-dataverse-attribute": "mserp_pannumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_pannumber",
+          "maxLength": 10
+        },
+        "mserp_panreferencenumber": {
+          "type": "string",
+          "title": "Reference number",
+          "x-ms-dataverse-attribute": "mserp_panreferencenumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_panreferencenumber",
+          "maxLength": 10
+        },
+        "mserp_panstatus": {
+          "type": "string",
+          "title": "Status",
+          "x-ms-dataverse-attribute": "mserp_panstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_panstatus",
+          "enum": [
+            "Not available",
+            "Received",
+            "Applied",
+            "Invalid"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "6db056d1-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_panstatusname": {
+          "type": "string",
+          "title": "mserp_panstatusname",
+          "x-ms-dataverse-attribute": "mserp_panstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_panstatusName",
+          "x-ms-dataverse-attribute-of": "mserp_panstatus",
+          "x-ms-read-only": true
+        },
+        "mserp_paymentfeegroupid": {
+          "type": "string",
+          "title": "Vendor payment fee group",
+          "x-ms-dataverse-attribute": "mserp_paymentfeegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_paymentfeegroupid",
+          "maxLength": 20
+        },
+        "mserp_paymentid": {
+          "type": "string",
+          "title": "Payment ID",
+          "x-ms-dataverse-attribute": "mserp_paymentid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_paymentid",
+          "maxLength": 200
+        },
+        "mserp_paymentspecificationid": {
+          "type": "string",
+          "title": "Payment specification",
+          "x-ms-dataverse-attribute": "mserp_paymentspecificationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_paymentspecificationid",
+          "maxLength": 10
+        },
+        "mserp_paymenttransactioncode": {
+          "type": "string",
+          "title": "Payment transaction code",
+          "x-ms-dataverse-attribute": "mserp_paymenttransactioncode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_paymenttransactioncode",
+          "maxLength": 2
+        },
+        "mserp_personanniversaryday": {
+          "type": "string",
+          "title": "Anniversary day",
+          "x-ms-dataverse-attribute": "mserp_personanniversaryday",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_personanniversaryday"
+        },
+        "mserp_personanniversarymonth": {
+          "type": "string",
+          "title": "Anniversary month",
+          "x-ms-dataverse-attribute": "mserp_personanniversarymonth",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_personanniversarymonth",
+          "enum": [
+            "None",
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007,
+            200000008,
+            200000009,
+            200000010,
+            200000011,
+            200000012
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "1ef84fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Month (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_personanniversarymonthname": {
+          "type": "string",
+          "title": "mserp_personanniversarymonthname",
+          "x-ms-dataverse-attribute": "mserp_personanniversarymonthname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_personanniversarymonthName",
+          "x-ms-dataverse-attribute-of": "mserp_personanniversarymonth",
+          "x-ms-read-only": true
+        },
+        "mserp_personanniversaryyear": {
+          "type": "string",
+          "title": "Anniversary year",
+          "x-ms-dataverse-attribute": "mserp_personanniversaryyear",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_personanniversaryyear"
+        },
+        "mserp_personbirthday": {
+          "type": "string",
+          "title": "Birth day",
+          "x-ms-dataverse-attribute": "mserp_personbirthday",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_personbirthday"
+        },
+        "mserp_personbirthmonth": {
+          "type": "string",
+          "title": "Birth month",
+          "x-ms-dataverse-attribute": "mserp_personbirthmonth",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_personbirthmonth",
+          "enum": [
+            "None",
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006,
+            200000007,
+            200000008,
+            200000009,
+            200000010,
+            200000011,
+            200000012
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "1ef84fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Month (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_personbirthmonthname": {
+          "type": "string",
+          "title": "mserp_personbirthmonthname",
+          "x-ms-dataverse-attribute": "mserp_personbirthmonthname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_personbirthmonthName",
+          "x-ms-dataverse-attribute-of": "mserp_personbirthmonth",
+          "x-ms-read-only": true
+        },
+        "mserp_personbirthyear": {
+          "type": "string",
+          "title": "Birth year",
+          "x-ms-dataverse-attribute": "mserp_personbirthyear",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_personbirthyear"
+        },
+        "mserp_personchildrennames": {
+          "type": "string",
+          "title": "Children",
+          "x-ms-dataverse-attribute": "mserp_personchildrennames",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personchildrennames",
+          "maxLength": 255
+        },
+        "mserp_personfirstname": {
+          "type": "string",
+          "title": "First name",
+          "x-ms-dataverse-attribute": "mserp_personfirstname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personfirstname",
+          "maxLength": 50
+        },
+        "mserp_persongender": {
+          "type": "string",
+          "title": "Gender",
+          "x-ms-dataverse-attribute": "mserp_persongender",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_persongender",
+          "enum": [
+            "Unknown",
+            "Male",
+            "Female",
+            "Non-Specific"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "39f84fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Gender (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_persongendername": {
+          "type": "string",
+          "title": "mserp_persongendername",
+          "x-ms-dataverse-attribute": "mserp_persongendername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_persongenderName",
+          "x-ms-dataverse-attribute-of": "mserp_persongender",
+          "x-ms-read-only": true
+        },
+        "mserp_personhobbies": {
+          "type": "string",
+          "title": "Hobbies",
+          "x-ms-dataverse-attribute": "mserp_personhobbies",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personhobbies",
+          "maxLength": 150
+        },
+        "mserp_personinitials": {
+          "type": "string",
+          "title": "Initials",
+          "x-ms-dataverse-attribute": "mserp_personinitials",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personinitials",
+          "maxLength": 10
+        },
+        "mserp_personlastname": {
+          "type": "string",
+          "title": "Last name",
+          "x-ms-dataverse-attribute": "mserp_personlastname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personlastname",
+          "maxLength": 50
+        },
+        "mserp_personlastnameprefix": {
+          "type": "string",
+          "title": "Last name prefix",
+          "x-ms-dataverse-attribute": "mserp_personlastnameprefix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personlastnameprefix",
+          "maxLength": 25
+        },
+        "mserp_personmaritalstatus": {
+          "type": "string",
+          "title": "Marital status",
+          "x-ms-dataverse-attribute": "mserp_personmaritalstatus",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_personmaritalstatus",
+          "enum": [
+            "None",
+            "Single",
+            "Married",
+            "Divorced",
+            "Widowed"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "3ef84fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Marital status (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_personmaritalstatusname": {
+          "type": "string",
+          "title": "mserp_personmaritalstatusname",
+          "x-ms-dataverse-attribute": "mserp_personmaritalstatusname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_personmaritalstatusName",
+          "x-ms-dataverse-attribute-of": "mserp_personmaritalstatus",
+          "x-ms-read-only": true
+        },
+        "mserp_personmiddlename": {
+          "type": "string",
+          "title": "Middle name",
+          "x-ms-dataverse-attribute": "mserp_personmiddlename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personmiddlename",
+          "maxLength": 50
+        },
+        "mserp_personpersonalsuffix": {
+          "type": "string",
+          "title": "Personal suffix",
+          "x-ms-dataverse-attribute": "mserp_personpersonalsuffix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personpersonalsuffix",
+          "maxLength": 100
+        },
+        "mserp_personpersonaltitle": {
+          "type": "string",
+          "title": "Personal title",
+          "x-ms-dataverse-attribute": "mserp_personpersonaltitle",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personpersonaltitle",
+          "maxLength": 100
+        },
+        "mserp_personphoneticfirstname": {
+          "type": "string",
+          "title": "Phonetic first",
+          "x-ms-dataverse-attribute": "mserp_personphoneticfirstname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personphoneticfirstname",
+          "maxLength": 50
+        },
+        "mserp_personphoneticlastname": {
+          "type": "string",
+          "title": "Phonetic last",
+          "x-ms-dataverse-attribute": "mserp_personphoneticlastname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personphoneticlastname",
+          "maxLength": 50
+        },
+        "mserp_personphoneticmiddlename": {
+          "type": "string",
+          "title": "Phonetic middle",
+          "x-ms-dataverse-attribute": "mserp_personphoneticmiddlename",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personphoneticmiddlename",
+          "maxLength": 50
+        },
+        "mserp_personprofessionalsuffix": {
+          "type": "string",
+          "title": "Professional suffix",
+          "x-ms-dataverse-attribute": "mserp_personprofessionalsuffix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personprofessionalsuffix",
+          "maxLength": 100
+        },
+        "mserp_personprofessionaltitle": {
+          "type": "string",
+          "title": "Professional title",
+          "x-ms-dataverse-attribute": "mserp_personprofessionaltitle",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_personprofessionaltitle",
+          "maxLength": 100
+        },
+        "mserp_preferentialvendor": {
+          "type": "string",
+          "title": "Preferential vendor",
+          "x-ms-dataverse-attribute": "mserp_preferentialvendor",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_preferentialvendor",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_preferentialvendorname": {
+          "type": "string",
+          "title": "mserp_preferentialvendorname",
+          "x-ms-dataverse-attribute": "mserp_preferentialvendorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_preferentialvendorName",
+          "x-ms-dataverse-attribute-of": "mserp_preferentialvendor",
+          "x-ms-read-only": true
+        },
+        "mserp_pricepointgroupid": {
+          "type": "string",
+          "title": "Price point group",
+          "x-ms-dataverse-attribute": "mserp_pricepointgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_pricepointgroupid",
+          "maxLength": 10
+        },
+        "mserp_pricepointroundingtype": {
+          "type": "string",
+          "title": "Rounding for price points",
+          "x-ms-dataverse-attribute": "mserp_pricepointroundingtype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_pricepointroundingtype",
+          "enum": [
+            "Up",
+            "Down",
+            "Nearest"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "462d67d7-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_pricepointroundingtypename": {
+          "type": "string",
+          "title": "mserp_pricepointroundingtypename",
+          "x-ms-dataverse-attribute": "mserp_pricepointroundingtypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_pricepointroundingtypeName",
+          "x-ms-dataverse-attribute-of": "mserp_pricepointroundingtype",
+          "x-ms-read-only": true
+        },
+        "mserp_pricevendorgroupid": {
+          "type": "string",
+          "title": "Price group",
+          "x-ms-dataverse-attribute": "mserp_pricevendorgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_pricevendorgroupid",
+          "maxLength": 10
+        },
+        "mserp_primarycontactemailrecordid": {
+          "type": "string",
+          "title": "PrimaryContactEmailRecordId",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemailrecordid",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_primarycontactemailrecordid",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactemailrecordid_bigint": {
+          "type": "string",
+          "title": "PrimaryContactEmailRecordId",
+          "x-ms-dataverse-attribute": "mserp_primarycontactemailrecordid_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_primarycontactemailrecordid_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactfaxrecordid": {
+          "type": "string",
+          "title": "PrimaryContactFaxRecordId",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfaxrecordid",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_primarycontactfaxrecordid",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactfaxrecordid_bigint": {
+          "type": "string",
+          "title": "PrimaryContactFaxRecordId",
+          "x-ms-dataverse-attribute": "mserp_primarycontactfaxrecordid_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_primarycontactfaxrecordid_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactpersonid": {
+          "type": "string",
+          "title": "Contact ID",
+          "x-ms-dataverse-attribute": "mserp_primarycontactpersonid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarycontactpersonid",
+          "maxLength": 20
+        },
+        "mserp_primarycontactphonerecordid": {
+          "type": "string",
+          "title": "PrimaryContactPhoneRecordId",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphonerecordid",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_primarycontactphonerecordid",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontactphonerecordid_bigint": {
+          "type": "string",
+          "title": "PrimaryContactPhoneRecordId",
+          "x-ms-dataverse-attribute": "mserp_primarycontactphonerecordid_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_primarycontactphonerecordid_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontacturlrecordid": {
+          "type": "string",
+          "title": "PrimaryContactURLRecordId",
+          "x-ms-dataverse-attribute": "mserp_primarycontacturlrecordid",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_primarycontacturlrecordid",
+          "x-ms-read-only": true
+        },
+        "mserp_primarycontacturlrecordid_bigint": {
+          "type": "string",
+          "title": "PrimaryContactURLRecordId",
+          "x-ms-dataverse-attribute": "mserp_primarycontacturlrecordid_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_primarycontacturlrecordid_bigint",
+          "x-ms-read-only": true
+        },
+        "mserp_primaryemailaddress": {
+          "type": "string",
+          "title": "Primary email",
+          "x-ms-dataverse-attribute": "mserp_primaryemailaddress",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryemailaddress",
+          "maxLength": 255
+        },
+        "mserp_primaryemailaddressdescription": {
+          "type": "string",
+          "title": "Primary email description",
+          "x-ms-dataverse-attribute": "mserp_primaryemailaddressdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryemailaddressdescription",
+          "maxLength": 60
+        },
+        "mserp_primaryemailaddresspurpose": {
+          "type": "string",
+          "title": "Primary email purpose",
+          "x-ms-dataverse-attribute": "mserp_primaryemailaddresspurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryemailaddresspurpose",
+          "maxLength": 1000
+        },
+        "mserp_primaryfacebook": {
+          "type": "string",
+          "title": "Primary Facebook",
+          "x-ms-dataverse-attribute": "mserp_primaryfacebook",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfacebook",
+          "maxLength": 255
+        },
+        "mserp_primaryfacebookdescription": {
+          "type": "string",
+          "title": "Primary Facebook description",
+          "x-ms-dataverse-attribute": "mserp_primaryfacebookdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfacebookdescription",
+          "maxLength": 60
+        },
+        "mserp_primaryfacebookpurpose": {
+          "type": "string",
+          "title": "Primary Facebook purpose",
+          "x-ms-dataverse-attribute": "mserp_primaryfacebookpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfacebookpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primaryfaxnumber": {
+          "type": "string",
+          "title": "Primary fax",
+          "x-ms-dataverse-attribute": "mserp_primaryfaxnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfaxnumber",
+          "maxLength": 255
+        },
+        "mserp_primaryfaxnumberdescription": {
+          "type": "string",
+          "title": "Primary fax description",
+          "x-ms-dataverse-attribute": "mserp_primaryfaxnumberdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfaxnumberdescription",
+          "maxLength": 60
+        },
+        "mserp_primaryfaxnumberextension": {
+          "type": "string",
+          "title": "Primary fax extension",
+          "x-ms-dataverse-attribute": "mserp_primaryfaxnumberextension",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfaxnumberextension",
+          "maxLength": 10
+        },
+        "mserp_primaryfaxnumberpurpose": {
+          "type": "string",
+          "title": "Primary fax purpose",
+          "x-ms-dataverse-attribute": "mserp_primaryfaxnumberpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryfaxnumberpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarylinkedin": {
+          "type": "string",
+          "title": "Primary LinkedIn",
+          "x-ms-dataverse-attribute": "mserp_primarylinkedin",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarylinkedin",
+          "maxLength": 255
+        },
+        "mserp_primarylinkedindescription": {
+          "type": "string",
+          "title": "Primary LinkedIn description",
+          "x-ms-dataverse-attribute": "mserp_primarylinkedindescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarylinkedindescription",
+          "maxLength": 60
+        },
+        "mserp_primarylinkedinpurpose": {
+          "type": "string",
+          "title": "Primary LinkedIn purpose",
+          "x-ms-dataverse-attribute": "mserp_primarylinkedinpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarylinkedinpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primaryphonenumber": {
+          "type": "string",
+          "title": "Primary phone",
+          "x-ms-dataverse-attribute": "mserp_primaryphonenumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryphonenumber",
+          "maxLength": 255
+        },
+        "mserp_primaryphonenumberdescription": {
+          "type": "string",
+          "title": "Primary phone description",
+          "x-ms-dataverse-attribute": "mserp_primaryphonenumberdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryphonenumberdescription",
+          "maxLength": 60
+        },
+        "mserp_primaryphonenumberextension": {
+          "type": "string",
+          "title": "Primary phone extension",
+          "x-ms-dataverse-attribute": "mserp_primaryphonenumberextension",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryphonenumberextension",
+          "maxLength": 10
+        },
+        "mserp_primaryphonenumberpurpose": {
+          "type": "string",
+          "title": "Primary phone purpose",
+          "x-ms-dataverse-attribute": "mserp_primaryphonenumberpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryphonenumberpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarytelex": {
+          "type": "string",
+          "title": "Primary telex",
+          "x-ms-dataverse-attribute": "mserp_primarytelex",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarytelex",
+          "maxLength": 255
+        },
+        "mserp_primarytelexdescription": {
+          "type": "string",
+          "title": "Primary telex description",
+          "x-ms-dataverse-attribute": "mserp_primarytelexdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarytelexdescription",
+          "maxLength": 60
+        },
+        "mserp_primarytelexpurpose": {
+          "type": "string",
+          "title": "Primary telex purpose",
+          "x-ms-dataverse-attribute": "mserp_primarytelexpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarytelexpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primarytwitter": {
+          "type": "string",
+          "title": "Primary Twitter",
+          "x-ms-dataverse-attribute": "mserp_primarytwitter",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarytwitter",
+          "maxLength": 255
+        },
+        "mserp_primarytwitterdescription": {
+          "type": "string",
+          "title": "Primary Twitter description",
+          "x-ms-dataverse-attribute": "mserp_primarytwitterdescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarytwitterdescription",
+          "maxLength": 60
+        },
+        "mserp_primarytwitterpurpose": {
+          "type": "string",
+          "title": "Primary Twitter description",
+          "x-ms-dataverse-attribute": "mserp_primarytwitterpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primarytwitterpurpose",
+          "maxLength": 1000
+        },
+        "mserp_primaryurl": {
+          "type": "string",
+          "title": "Primary URL",
+          "x-ms-dataverse-attribute": "mserp_primaryurl",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryurl",
+          "maxLength": 255
+        },
+        "mserp_primaryurldescription": {
+          "type": "string",
+          "title": "Primary URL description",
+          "x-ms-dataverse-attribute": "mserp_primaryurldescription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryurldescription",
+          "maxLength": 60
+        },
+        "mserp_primaryurlpurpose": {
+          "type": "string",
+          "title": "Primary URL purpose",
+          "x-ms-dataverse-attribute": "mserp_primaryurlpurpose",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_primaryurlpurpose",
+          "maxLength": 1000
+        },
+        "mserp_productdescriptionvendorgroupid": {
+          "type": "string",
+          "title": "Item - vendor group",
+          "x-ms-dataverse-attribute": "mserp_productdescriptionvendorgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_productdescriptionvendorgroupid",
+          "maxLength": 10
+        },
+        "mserp_purchaseorderconsolidationdayofmonth": {
+          "type": "string",
+          "title": "Consolidation day",
+          "x-ms-dataverse-attribute": "mserp_purchaseorderconsolidationdayofmonth",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_purchaseorderconsolidationdayofmonth"
+        },
+        "mserp_purchaserebatevendorgroupid": {
+          "type": "string",
+          "title": "Vendor rebate group",
+          "x-ms-dataverse-attribute": "mserp_purchaserebatevendorgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchaserebatevendorgroupid",
+          "maxLength": 20
+        },
+        "mserp_purchaseshipcalendarid": {
+          "type": "string",
+          "title": "Ship calendar",
+          "x-ms-dataverse-attribute": "mserp_purchaseshipcalendarid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchaseshipcalendarid",
+          "maxLength": 10
+        },
+        "mserp_purchaseworkcalendarid": {
+          "type": "string",
+          "title": "Purchase calendar",
+          "x-ms-dataverse-attribute": "mserp_purchaseworkcalendarid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_purchaseworkcalendarid",
+          "maxLength": 10
+        },
+        "mserp_requireshipfrom": {
+          "type": "string",
+          "title": "Require ship from on vendor invoice",
+          "x-ms-dataverse-attribute": "mserp_requireshipfrom",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_requireshipfrom",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_requireshipfromname": {
+          "type": "string",
+          "title": "mserp_requireshipfromname",
+          "x-ms-dataverse-attribute": "mserp_requireshipfromname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_requireshipfromName",
+          "x-ms-dataverse-attribute-of": "mserp_requireshipfrom",
+          "x-ms-read-only": true
+        },
+        "mserp_residenceforeigncountryregionid": {
+          "type": "string",
+          "title": "Residence foreign country/region",
+          "x-ms-dataverse-attribute": "mserp_residenceforeigncountryregionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_residenceforeigncountryregionid",
+          "maxLength": 10
+        },
+        "mserp_rfcfederaltaxnumber": {
+          "type": "string",
+          "title": "RFC number",
+          "x-ms-dataverse-attribute": "mserp_rfcfederaltaxnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_rfcfederaltaxnumber",
+          "maxLength": 13
+        },
+        "mserp_roundingmethod": {
+          "type": "string",
+          "title": "Rounding method",
+          "x-ms-dataverse-attribute": "mserp_roundingmethod",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_roundingmethod",
+          "maxLength": 10
+        },
+        "mserp_salespricerounding": {
+          "type": "string",
+          "title": "Sales price rounding",
+          "x-ms-dataverse-attribute": "mserp_salespricerounding",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_salespricerounding",
+          "enum": [
+            "None",
+            "Rounding",
+            "Price points"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "3e2d67d7-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Sales price rounding (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_salespriceroundingname": {
+          "type": "string",
+          "title": "mserp_salespriceroundingname",
+          "x-ms-dataverse-attribute": "mserp_salespriceroundingname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_salespriceroundingName",
+          "x-ms-dataverse-attribute-of": "mserp_salespricerounding",
+          "x-ms-read-only": true
+        },
+        "mserp_salestaxgroupcode": {
+          "type": "string",
+          "title": "Sales tax group",
+          "x-ms-dataverse-attribute": "mserp_salestaxgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_salestaxgroupcode",
+          "maxLength": 10
+        },
+        "mserp_separatedivisionid": {
+          "type": "string",
+          "title": "Separate division ID",
+          "x-ms-dataverse-attribute": "mserp_separatedivisionid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_separatedivisionid",
+          "maxLength": 20
+        },
+        "mserp_servicecategory": {
+          "type": "string",
+          "title": "Service category",
+          "x-ms-dataverse-attribute": "mserp_servicecategory",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_servicecategory",
+          "maxLength": 10
+        },
+        "mserp_shippingvendoraccountnumber": {
+          "type": "string",
+          "title": "Shipping company",
+          "x-ms-dataverse-attribute": "mserp_shippingvendoraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_shippingvendoraccountnumber",
+          "maxLength": 20
+        },
+        "mserp_shippingvendortype": {
+          "type": "string",
+          "title": "Shipping type",
+          "x-ms-dataverse-attribute": "mserp_shippingvendortype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_shippingvendortype",
+          "enum": [
+            "None",
+            "Shipping company",
+            "Customs broker",
+            "Agent"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "c39f5fdd-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Shipping type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_shippingvendortypename": {
+          "type": "string",
+          "title": "mserp_shippingvendortypename",
+          "x-ms-dataverse-attribute": "mserp_shippingvendortypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_shippingvendortypeName",
+          "x-ms-dataverse-attribute-of": "mserp_shippingvendortype",
+          "x-ms-read-only": true
+        },
+        "mserp_siretnumber": {
+          "type": "string",
+          "title": "French Siret",
+          "x-ms-dataverse-attribute": "mserp_siretnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_siretnumber",
+          "maxLength": 14
+        },
+        "mserp_sizeidprefix": {
+          "type": "string",
+          "title": "Size prefix",
+          "x-ms-dataverse-attribute": "mserp_sizeidprefix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_sizeidprefix",
+          "maxLength": 2
+        },
+        "mserp_ssivaliditydate": {
+          "type": "string",
+          "title": "SSI validity date",
+          "x-ms-dataverse-attribute": "mserp_ssivaliditydate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_ssivaliditydate"
+        },
+        "mserp_ssivendor": {
+          "type": "string",
+          "title": "SSI vendor",
+          "x-ms-dataverse-attribute": "mserp_ssivendor",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_ssivendor",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_ssivendorname": {
+          "type": "string",
+          "title": "mserp_ssivendorname",
+          "x-ms-dataverse-attribute": "mserp_ssivendorname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_ssivendorName",
+          "x-ms-dataverse-attribute-of": "mserp_ssivendor",
+          "x-ms-read-only": true
+        },
+        "mserp_stateinscription": {
+          "type": "string",
+          "title": "State inscription",
+          "x-ms-dataverse-attribute": "mserp_stateinscription",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_stateinscription",
+          "maxLength": 30
+        },
+        "mserp_structuredepartment": {
+          "type": "string",
+          "title": "Organization department",
+          "x-ms-dataverse-attribute": "mserp_structuredepartment",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_structuredepartment",
+          "maxLength": 30
+        },
+        "mserp_styleidprefix": {
+          "type": "string",
+          "title": "Style prefix",
+          "x-ms-dataverse-attribute": "mserp_styleidprefix",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_styleidprefix",
+          "maxLength": 2
+        },
+        "mserp_tax1099boxid": {
+          "type": "string",
+          "title": "1099 box",
+          "x-ms-dataverse-attribute": "mserp_tax1099boxid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_tax1099boxid",
+          "maxLength": 10
+        },
+        "mserp_tax1099doingbusinessasname": {
+          "type": "string",
+          "title": "DBA",
+          "x-ms-dataverse-attribute": "mserp_tax1099doingbusinessasname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_tax1099doingbusinessasname",
+          "maxLength": 60
+        },
+        "mserp_tax1099federaltaxid": {
+          "type": "string",
+          "title": "Federal tax ID",
+          "x-ms-dataverse-attribute": "mserp_tax1099federaltaxid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_tax1099federaltaxid",
+          "maxLength": 11
+        },
+        "mserp_tax1099idtype": {
+          "type": "string",
+          "title": "Tax ID type",
+          "x-ms-dataverse-attribute": "mserp_tax1099idtype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_tax1099idtype",
+          "enum": [
+            "Unknown",
+            "Employer Identification Number",
+            "Social Security Number",
+            "Individual Taxpayer Identification Number",
+            "Adopted Tax Payer Identification Number"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "e1f64fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Tax ID type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_tax1099idtypename": {
+          "type": "string",
+          "title": "mserp_tax1099idtypename",
+          "x-ms-dataverse-attribute": "mserp_tax1099idtypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_tax1099idtypeName",
+          "x-ms-dataverse-attribute-of": "mserp_tax1099idtype",
+          "x-ms-read-only": true
+        },
+        "mserp_tax1099nametouse": {
+          "type": "string",
+          "title": "Name to use on the 1099",
+          "x-ms-dataverse-attribute": "mserp_tax1099nametouse",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_tax1099nametouse",
+          "enum": [
+            "Vendor name",
+            "Doing business as"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "d8f64fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Name to use on the 1099 (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_tax1099nametousename": {
+          "type": "string",
+          "title": "mserp_tax1099nametousename",
+          "x-ms-dataverse-attribute": "mserp_tax1099nametousename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_tax1099nametouseName",
+          "x-ms-dataverse-attribute-of": "mserp_tax1099nametouse",
+          "x-ms-read-only": true
+        },
+        "mserp_tax1099type": {
+          "type": "string",
+          "title": "Type of Tax 1099 form",
+          "x-ms-dataverse-attribute": "mserp_tax1099type",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_tax1099type",
+          "enum": [
+            "1099-DIV",
+            "1099-INT",
+            "1099-MISC",
+            "1099-OID",
+            "1099-G",
+            "1099-S",
+            "1099-NEC"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003,
+            200000004,
+            200000005,
+            200000006
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "cdf74fcb-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Type of Tax 1099 form (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_tax1099typename": {
+          "type": "string",
+          "title": "mserp_tax1099typename",
+          "x-ms-dataverse-attribute": "mserp_tax1099typename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_tax1099typeName",
+          "x-ms-dataverse-attribute-of": "mserp_tax1099type",
+          "x-ms-read-only": true
+        },
+        "mserp_taxagent": {
+          "type": "string",
+          "title": "Tax agent",
+          "x-ms-dataverse-attribute": "mserp_taxagent",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_taxagent",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_taxagentname": {
+          "type": "string",
+          "title": "mserp_taxagentname",
+          "x-ms-dataverse-attribute": "mserp_taxagentname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_taxagentName",
+          "x-ms-dataverse-attribute-of": "mserp_taxagent",
+          "x-ms-read-only": true
+        },
+        "mserp_taxexemptnumber": {
+          "type": "string",
+          "title": "Tax exempt number",
+          "x-ms-dataverse-attribute": "mserp_taxexemptnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_taxexemptnumber",
+          "maxLength": 20
+        },
+        "mserp_taxoperationcode": {
+          "type": "string",
+          "title": "VAT operation code",
+          "x-ms-dataverse-attribute": "mserp_taxoperationcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_taxoperationcode",
+          "maxLength": 10
+        },
+        "mserp_taxpartnerkind": {
+          "type": "string",
+          "title": "Vendor type",
+          "x-ms-dataverse-attribute": "mserp_taxpartnerkind",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_taxpartnerkind",
+          "enum": [
+            "NA",
+            "Not resident",
+            "State authority"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "262d67d7-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Vendor type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_taxpartnerkindname": {
+          "type": "string",
+          "title": "mserp_taxpartnerkindname",
+          "x-ms-dataverse-attribute": "mserp_taxpartnerkindname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_taxpartnerkindName",
+          "x-ms-dataverse-attribute-of": "mserp_taxpartnerkind",
+          "x-ms-read-only": true
+        },
+        "mserp_tcsgroup": {
+          "type": "string",
+          "title": "TCS group",
+          "x-ms-dataverse-attribute": "mserp_tcsgroup",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_tcsgroup",
+          "maxLength": 10
+        },
+        "mserp_tdsgroup": {
+          "type": "string",
+          "title": "TDS group",
+          "x-ms-dataverse-attribute": "mserp_tdsgroup",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_tdsgroup",
+          "maxLength": 10
+        },
+        "mserp_uniquepopulationregistrycode": {
+          "type": "string",
+          "title": "CURP number",
+          "x-ms-dataverse-attribute": "mserp_uniquepopulationregistrycode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_uniquepopulationregistrycode",
+          "maxLength": 18
+        },
+        "mserp_upsfreightzone": {
+          "type": "string",
+          "title": "UPS zone",
+          "x-ms-dataverse-attribute": "mserp_upsfreightzone",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_upsfreightzone",
+          "maxLength": 10
+        },
+        "mserp_vendoraccountnumber": {
+          "type": "string",
+          "title": "Vendor account",
+          "x-ms-dataverse-attribute": "mserp_vendoraccountnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendoraccountnumber",
+          "x-ms-dataverse-primary-name": true,
+          "maxLength": 20
+        },
+        "mserp_vendorcosttypegroup": {
+          "type": "string",
+          "title": "Cost type group",
+          "x-ms-dataverse-attribute": "mserp_vendorcosttypegroup",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorcosttypegroup",
+          "maxLength": 20
+        },
+        "mserp_vendordunsnumber": {
+          "type": "string",
+          "title": "DUNS number",
+          "x-ms-dataverse-attribute": "mserp_vendordunsnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendordunsnumber",
+          "maxLength": 9
+        },
+        "mserp_vendorexceptiongroupid": {
+          "type": "string",
+          "title": "Vendor exception group",
+          "x-ms-dataverse-attribute": "mserp_vendorexceptiongroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorexceptiongroupid",
+          "maxLength": 10
+        },
+        "mserp_vendorgroupid": {
+          "type": "string",
+          "title": "Group",
+          "x-ms-dataverse-attribute": "mserp_vendorgroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorgroupid",
+          "required": true,
+          "maxLength": 10
+        },
+        "mserp_vendorholdreleasedate": {
+          "type": "string",
+          "title": "Vendor hold release date",
+          "x-ms-dataverse-attribute": "mserp_vendorholdreleasedate",
+          "x-ms-dataverse-type": "DateTimeType",
+          "x-ms-schema-name": "mserp_vendorholdreleasedate"
+        },
+        "mserp_vendorinvoicedeclarationid": {
+          "type": "string",
+          "title": "Invoice declaration",
+          "x-ms-dataverse-attribute": "mserp_vendorinvoicedeclarationid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorinvoicedeclarationid",
+          "maxLength": 10
+        },
+        "mserp_vendorinvoicelinematchingpolicy": {
+          "type": "string",
+          "title": "Line matching policy",
+          "x-ms-dataverse-attribute": "mserp_vendorinvoicelinematchingpolicy",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_vendorinvoicelinematchingpolicy",
+          "enum": [
+            "Company policy",
+            "Three-way matching",
+            "Two-way matching",
+            "Not required"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "967957c5-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Line matching policy (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_vendorinvoicelinematchingpolicyname": {
+          "type": "string",
+          "title": "mserp_vendorinvoicelinematchingpolicyname",
+          "x-ms-dataverse-attribute": "mserp_vendorinvoicelinematchingpolicyname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_vendorinvoicelinematchingpolicyName",
+          "x-ms-dataverse-attribute-of": "mserp_vendorinvoicelinematchingpolicy",
+          "x-ms-read-only": true
+        },
+        "mserp_vendorknownasname": {
+          "type": "string",
+          "title": "Known as",
+          "x-ms-dataverse-attribute": "mserp_vendorknownasname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorknownasname",
+          "maxLength": 160
+        },
+        "mserp_vendorleadtime": {
+          "type": "string",
+          "title": "Vendor Lead Time",
+          "x-ms-dataverse-attribute": "mserp_vendorleadtime",
+          "x-ms-dataverse-type": "IntegerType",
+          "x-ms-schema-name": "mserp_vendorleadtime"
+        },
+        "mserp_vendororganizationname": {
+          "type": "string",
+          "title": "Name",
+          "x-ms-dataverse-attribute": "mserp_vendororganizationname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendororganizationname",
+          "maxLength": 160
+        },
+        "mserp_vendoroverunderdeliverytolerancegroupid": {
+          "type": "string",
+          "title": "Over/under tolerance group",
+          "x-ms-dataverse-attribute": "mserp_vendoroverunderdeliverytolerancegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendoroverunderdeliverytolerancegroupid",
+          "maxLength": 10
+        },
+        "mserp_vendorpartynumber": {
+          "type": "string",
+          "title": "Party ID",
+          "x-ms-dataverse-attribute": "mserp_vendorpartynumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorpartynumber",
+          "maxLength": 40
+        },
+        "mserp_vendorpartytype": {
+          "type": "string",
+          "title": "Record type",
+          "x-ms-dataverse-attribute": "mserp_vendorpartytype",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorpartytype",
+          "maxLength": 13
+        },
+        "mserp_vendorpaymentfinancialinterestcode": {
+          "type": "string",
+          "title": "Interest code",
+          "x-ms-dataverse-attribute": "mserp_vendorpaymentfinancialinterestcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorpaymentfinancialinterestcode",
+          "maxLength": 10
+        },
+        "mserp_vendorpaymentfinecode": {
+          "type": "string",
+          "title": "Fine code",
+          "x-ms-dataverse-attribute": "mserp_vendorpaymentfinecode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorpaymentfinecode",
+          "maxLength": 10
+        },
+        "mserp_vendorportalcollaborationmethod": {
+          "type": "string",
+          "title": "Collaboration activation",
+          "x-ms-dataverse-attribute": "mserp_vendorportalcollaborationmethod",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_vendorportalcollaborationmethod",
+          "enum": [
+            "Not Active",
+            "Active (PO is not auto-confirmed) ",
+            "Active (PO is auto-confirmed)"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002
+          ],
+          "Color": [
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "ba2c67d7-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Collaboration activation (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_vendorportalcollaborationmethodname": {
+          "type": "string",
+          "title": "mserp_vendorportalcollaborationmethodname",
+          "x-ms-dataverse-attribute": "mserp_vendorportalcollaborationmethodname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_vendorportalcollaborationmethodName",
+          "x-ms-dataverse-attribute-of": "mserp_vendorportalcollaborationmethod",
+          "x-ms-read-only": true
+        },
+        "mserp_vendorpricetolerancegroupid": {
+          "type": "string",
+          "title": "Vendor price tolerance group",
+          "x-ms-dataverse-attribute": "mserp_vendorpricetolerancegroupid",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorpricetolerancegroupid",
+          "maxLength": 10
+        },
+        "mserp_vendorproducthierarchyid": {
+          "type": "string",
+          "title": "Hierarchy",
+          "x-ms-dataverse-attribute": "mserp_vendorproducthierarchyid",
+          "x-ms-dataverse-type": "DecimalType",
+          "x-ms-schema-name": "mserp_vendorproducthierarchyid"
+        },
+        "mserp_vendorproducthierarchyid_bigint": {
+          "type": "string",
+          "title": "Hierarchy",
+          "x-ms-dataverse-attribute": "mserp_vendorproducthierarchyid_bigint",
+          "x-ms-dataverse-type": "BigIntType",
+          "x-ms-schema-name": "mserp_vendorproducthierarchyid_bigint"
+        },
+        "mserp_vendorsearchname": {
+          "type": "string",
+          "title": "Search name",
+          "x-ms-dataverse-attribute": "mserp_vendorsearchname",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_vendorsearchname",
+          "maxLength": 20
+        },
+        "mserp_vendortype": {
+          "type": "string",
+          "title": "Vendor type",
+          "x-ms-dataverse-attribute": "mserp_vendortype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_vendortype",
+          "enum": [
+            "None",
+            "Own",
+            "3rd party",
+            "Contract concession"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "4e2d67d7-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Vendor type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_vendortypename": {
+          "type": "string",
+          "title": "mserp_vendortypename",
+          "x-ms-dataverse-attribute": "mserp_vendortypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_vendortypeName",
+          "x-ms-dataverse-attribute-of": "mserp_vendortype",
+          "x-ms-read-only": true
+        },
+        "mserp_vendvendorv2entityid": {
+          "type": "string",
+          "title": "Vendors V2 (mserp)",
+          "x-ms-dataverse-attribute": "mserp_vendvendorv2entityid",
+          "x-ms-dataverse-type": "UniqueidentifierType",
+          "x-ms-schema-name": "mserp_vendvendorv2entityId",
+          "x-ms-dataverse-primary-id": true,
+          "required": true,
+          "x-ms-keyType": "primary"
+        },
+        "mserp_willinvoiceprocessingsummaryupdatepurchaseorder": {
+          "type": "string",
+          "title": "Use automatic summary for posting purchase order invoices",
+          "x-ms-dataverse-attribute": "mserp_willinvoiceprocessingsummaryupdatepurchaseorder",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willinvoiceprocessingsummaryupdatepurchaseorder",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willinvoiceprocessingsummaryupdatepurchaseordername": {
+          "type": "string",
+          "title": "mserp_willinvoiceprocessingsummaryupdatepurchaseordername",
+          "x-ms-dataverse-attribute": "mserp_willinvoiceprocessingsummaryupdatepurchaseordername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willinvoiceprocessingsummaryupdatepurchaseorderName",
+          "x-ms-dataverse-attribute-of": "mserp_willinvoiceprocessingsummaryupdatepurchaseorder",
+          "x-ms-read-only": true
+        },
+        "mserp_willproductreceiptprocessingsummaryupdatepurchaseorder": {
+          "type": "string",
+          "title": "Use automatic summary for posting purchase order packing slips",
+          "x-ms-dataverse-attribute": "mserp_willproductreceiptprocessingsummaryupdatepurchaseorder",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willproductreceiptprocessingsummaryupdatepurchaseorder",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willproductreceiptprocessingsummaryupdatepurchaseordername": {
+          "type": "string",
+          "title": "mserp_willproductreceiptprocessingsummaryupdatepurchaseordername",
+          "x-ms-dataverse-attribute": "mserp_willproductreceiptprocessingsummaryupdatepurchaseordername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willproductreceiptprocessingsummaryupdatepurchaseorderName",
+          "x-ms-dataverse-attribute-of": "mserp_willproductreceiptprocessingsummaryupdatepurchaseorder",
+          "x-ms-read-only": true
+        },
+        "mserp_willpurchaseorderincludepricesandamounts": {
+          "type": "string",
+          "title": "Purchase order prices/amount",
+          "x-ms-dataverse-attribute": "mserp_willpurchaseorderincludepricesandamounts",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willpurchaseorderincludepricesandamounts",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willpurchaseorderincludepricesandamountsname": {
+          "type": "string",
+          "title": "mserp_willpurchaseorderincludepricesandamountsname",
+          "x-ms-dataverse-attribute": "mserp_willpurchaseorderincludepricesandamountsname",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willpurchaseorderincludepricesandamountsName",
+          "x-ms-dataverse-attribute-of": "mserp_willpurchaseorderincludepricesandamounts",
+          "x-ms-read-only": true
+        },
+        "mserp_willpurchaseorderprocessingsummaryupdatepurchaseorder": {
+          "type": "string",
+          "title": "Use automatic summary for posting purchase orders",
+          "x-ms-dataverse-attribute": "mserp_willpurchaseorderprocessingsummaryupdatepurchaseorder",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willpurchaseorderprocessingsummaryupdatepurchaseorder",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willpurchaseorderprocessingsummaryupdatepurchaseordername": {
+          "type": "string",
+          "title": "mserp_willpurchaseorderprocessingsummaryupdatepurchaseordername",
+          "x-ms-dataverse-attribute": "mserp_willpurchaseorderprocessingsummaryupdatepurchaseordername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willpurchaseorderprocessingsummaryupdatepurchaseorderName",
+          "x-ms-dataverse-attribute-of": "mserp_willpurchaseorderprocessingsummaryupdatepurchaseorder",
+          "x-ms-read-only": true
+        },
+        "mserp_willreceiptslistprocessingsummaryupdatepurchaseorder": {
+          "type": "string",
+          "title": "Use automatic summary for posting purchase order receipts lists",
+          "x-ms-dataverse-attribute": "mserp_willreceiptslistprocessingsummaryupdatepurchaseorder",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_willreceiptslistprocessingsummaryupdatepurchaseorder",
+          "enum": [
+            "No",
+            "Yes"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001
+          ],
+          "Color": [
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "032753a7-6a02-f111-8406-6045bd0a812b",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "NoYes (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_willreceiptslistprocessingsummaryupdatepurchaseordername": {
+          "type": "string",
+          "title": "mserp_willreceiptslistprocessingsummaryupdatepurchaseordername",
+          "x-ms-dataverse-attribute": "mserp_willreceiptslistprocessingsummaryupdatepurchaseordername",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_willreceiptslistprocessingsummaryupdatepurchaseorderName",
+          "x-ms-dataverse-attribute-of": "mserp_willreceiptslistprocessingsummaryupdatepurchaseorder",
+          "x-ms-read-only": true
+        },
+        "mserp_withholdingtaxgroupcode": {
+          "type": "string",
+          "title": "Withholding tax group",
+          "x-ms-dataverse-attribute": "mserp_withholdingtaxgroupcode",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_withholdingtaxgroupcode",
+          "maxLength": 10
+        },
+        "mserp_withholdingtaxvendortype": {
+          "type": "string",
+          "title": "Vendor type",
+          "x-ms-dataverse-attribute": "mserp_withholdingtaxvendortype",
+          "x-ms-dataverse-type": "PicklistType",
+          "x-ms-schema-name": "mserp_withholdingtaxvendortype",
+          "enum": [
+            "Blank",
+            "Domestic",
+            "Foreign",
+            "Individual"
+          ],
+          "x-ms-enum-values": [
+            200000000,
+            200000001,
+            200000002,
+            200000003
+          ],
+          "Color": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "x-ms-optionsetmetadataid": "2eaf56d1-7c02-f111-8406-7ced8d3d84fc",
+          "x-ms-isGlobal": true,
+          "x-ms-optionsetdisplayname": "Vendor type (mserp)",
+          "x-ms-optionSetType": "Picklist"
+        },
+        "mserp_withholdingtaxvendortypename": {
+          "type": "string",
+          "title": "mserp_withholdingtaxvendortypename",
+          "x-ms-dataverse-attribute": "mserp_withholdingtaxvendortypename",
+          "x-ms-dataverse-type": "VirtualType",
+          "x-ms-schema-name": "mserp_withholdingtaxvendortypeName",
+          "x-ms-dataverse-attribute-of": "mserp_withholdingtaxvendortype",
+          "x-ms-read-only": true
+        },
+        "mserp_zakatfilenumber": {
+          "type": "string",
+          "title": "Zakat file number",
+          "x-ms-dataverse-attribute": "mserp_zakatfilenumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_zakatfilenumber",
+          "maxLength": 15
+        },
+        "mserp_zakatregistrationnumber": {
+          "type": "string",
+          "title": "Company registration number",
+          "x-ms-dataverse-attribute": "mserp_zakatregistrationnumber",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_zakatregistrationnumber",
+          "maxLength": 25
+        },
+        "mserp_zakatservicetype": {
+          "type": "string",
+          "title": "Service type",
+          "x-ms-dataverse-attribute": "mserp_zakatservicetype",
+          "x-ms-dataverse-type": "StringType",
+          "x-ms-schema-name": "mserp_zakatservicetype",
+          "maxLength": 25
+        }
+      },
+      "required": [
+        "mserp_vendorgroupid",
+        "mserp_vendvendorv2entityid"
+      ]
+    }
+  }
+}

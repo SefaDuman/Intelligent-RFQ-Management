@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "appId": "4957017f-7ab9-4168-831b-843c12e8ed50",
+  "appDisplayName": "Intelligent RFQ Management",
+  "region": "prod",
+  "appType": "CodeApp",
+  "environmentId": "08d993f6-d654-ef99-87cf-24e668385e09",
+  "description": "Manage Dynamics 365 SCM requests for quotation: overview dashboards, vendor e-mail invitations and reply comparison workspace.",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {
+    "ed8d7e1f-9211-40db-90c3-92f1ccfe7e65": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_microsoftcopilotstudio",
+      "displayName": "Microsoft Copilot Studio",
+      "dataSources": [
+        "microsoftcopilotstudio"
+      ],
+      "dataSets": {}
+    },
+    "a88a3ce8-d55f-4a7f-9675-0f0e5ca64cae": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365",
+      "displayName": "Office 365 Outlook",
+      "dataSources": [
+        "office365"
+      ],
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {
+    "default.cds": {
+      "dataSources": {
+        "requestforquotationheaderforsupplierportal_mserp_": {
+          "entitySetName": "mserp_vrmrequestforquotationheaderentities",
+          "logicalName": "mserp_vrmrequestforquotationheaderentity",
+          "isHidden": false
+        },
+        "requestforquotationlinesforsupplierportal_mserp_": {
+          "entitySetName": "mserp_vrmrequestforquotationlineentities",
+          "logicalName": "mserp_vrmrequestforquotationlineentity",
+          "isHidden": false
+        },
+        "rfqreplyheadersforsupplierportal_mserp_": {
+          "entitySetName": "mserp_vrmrequestforquotationreplyheaderentities",
+          "logicalName": "mserp_vrmrequestforquotationreplyheaderentity",
+          "isHidden": false
+        },
+        "requestforquotationreplylinesforsupplierportal_mserp_": {
+          "entitySetName": "mserp_vrmrequestforquotationreplylineentities",
+          "logicalName": "mserp_vrmrequestforquotationreplylineentity",
+          "isHidden": false
+        },
+        "vendorsv2_mserp_": {
+          "entitySetName": "mserp_vendvendorv2entities",
+          "logicalName": "mserp_vendvendorv2entity",
+          "isHidden": false
+        }
+      },
+      "environmentVariableName": ""
+    }
+  }
+}

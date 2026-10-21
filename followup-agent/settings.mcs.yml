@@ -1,0 +1,25 @@
+displayName: RFQ Vendor Follow-up
+schemaName: rfq_vendorFollowup
+accessControlPolicy: GroupMembership
+authenticationMode: Integrated
+authenticationTrigger: Always
+configuration:
+  settings:
+    GenerativeActionsEnabled: true
+
+  isAgentConnectable: true
+  gPTSettings:
+    defaultSchemaName: rfq_vendorFollowup.gpt.default
+
+  aISettings:
+    useModelKnowledge: true
+    isFileAnalysisEnabled: true
+    isSemanticSearchEnabled: true
+    optInUseLatestModels: false
+
+  recognizer:
+    kind: GenerativeAIRecognizer
+
+publishedOn: 2026-10-21T10:41:40.0000000Z
+template: default-2.1.0
+language: 1033

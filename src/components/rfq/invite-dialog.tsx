@@ -9,9 +9,10 @@ import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Skeleton } from "@/components/ui/skeleton"
 import { cn } from "@/lib/utils"
-import { useCurrentUser, useDataContext, useRfqCase, useSendInvites, useVendors } from "@/hooks/use-rfq-data"
+import { useCurrentUser, useDataContext, useReplies, useRfqCase, useRfqCases, useSendInvites, useVendors } from "@/hooks/use-rfq-data"
 import type { InviteRecipient } from "@/domain/types"
 import { buildInviteHtml, defaultInviteMessage, defaultInviteSubject } from "@/lib/email-template"
+import { rankSuppliers } from "@/lib/sourcing/supplier-shortlist"
 import { VendorAvatar } from "./rfq-badges"
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -61,13 +62,19 @@ export function InviteDialog({ rfqCaseId, open, onOpenChange }: { rfqCaseId?: st
   }, [open, detail])
 
   const category = detail?.header.procurementCategory
+  const cases = useRfqCases()
+  const allReplies = useReplies()
+  const ranked = useMemo(
+    () => new Map(rankSuppliers({ vendors, cases: cases.data ?? [], replies: allReplies.data ?? [], category }).map((r) => [r.vendor.accountNumber, r])),
+    [vendors, cases.data, allReplies.data, category],
+  )
   const sortedVendors = useMemo(() => {
     const q = search.trim().toLowerCase()
     return vendors
       .filter((v) => !q || [v.name, v.accountNumber, v.email, v.vendorGroup].some((f) => f?.toLowerCase().includes(q)))
-      .map((v) => ({ vendor: v, suggested: !!category && v.vendorGroup === category, status: invitedAccounts.get(v.accountNumber) }))
-      .sort((a, b) => Number(b.suggested) - Number(a.suggested) || a.vendor.name.localeCompare(b.vendor.name))
-  }, [vendors, search, category, invitedAccounts])
+      .map((v) => ({ vendor: v, fit: ranked.get(v.accountNumber), suggested: !!category && v.vendorGroup === category, status: invitedAccounts.get(v.accountNumber) }))
+      .sort((a, b) => (b.fit?.score ?? 0) - (a.fit?.score ?? 0) || a.vendor.name.localeCompare(b.vendor.name))
+  }, [vendors, search, category, invitedAccounts, ranked])
 
   const recipients: InviteRecipient[] = useMemo(
     () => [
@@ -188,7 +195,7 @@ export function InviteDialog({ rfqCaseId, open, onOpenChange }: { rfqCaseId?: st
                 </div>
                 <div className="space-y-1.5">
                   {vendorsLoading && <Skeleton className="h-12 w-full" />}
-                  {sortedVendors.map(({ vendor, suggested, status }) => {
+                  {sortedVendors.map(({ vendor, fit, suggested, status }) => {
                     const checked = selected.has(vendor.accountNumber)
                     const disabled = !vendor.email
                     return (
@@ -208,6 +215,11 @@ export function InviteDialog({ rfqCaseId, open, onOpenChange }: { rfqCaseId?: st
                             {suggested && (
                               <span className="inline-flex items-center gap-1 rounded-full bg-violet-500/10 px-1.5 py-0.5 text-[10px] font-medium text-violet-700 dark:text-violet-300">
                                 <Sparkles className="size-2.5" /> Category match
+                              </span>
+                            )}
+                            {fit && (
+                              <span className="rounded-full bg-muted px-1.5 py-0.5 text-[10px] font-medium tabular text-muted-foreground" title={[...fit.reasons, ...fit.warnings].join(" · ") || "Fit score"}>
+                                Fit {Math.round(fit.score)}
                               </span>
                             )}
                             {status && status !== "Created" && (

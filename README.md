@@ -17,6 +17,9 @@ A Power Apps **code app** (Vite + React + TypeScript) for managing the request f
 | **Natural-language RFQ assistant** | Dedicated read-only Copilot Studio agent answers company-scoped questions about RFQs, deadlines, replies and quoted line facts, with expandable evidence and RFQ/comparison links. |
 | **Vendor follow-up agent** | On-demand queue for outstanding Sent vendor RFQs due within seven days or overdue. Standard or AI-drafted reminders, editable preview, explicit single-email buyer approval, fresh source checks and a 24-hour browser-local sending guard. |
 | **Quote-document extraction** | Read text-based PDFs or pasted quote text, extract evidence-backed fields using a dedicated agent, correct values, map quoted rows to RFQ lines and download a buyer-reviewed JSON staging package. No ERP writes or official comparison changes. |
+| **RFQ drafting and shortlist** | Turn a pasted requirement into a draft RFQ (lines, quantities, target prices, dates, currency) with rule-based parsing, event templates (goods RFQ, services RFP, software RFP, RFI), editable evaluation criteria and a ranked supplier shortlist. Downloads a staging package; nothing is created in F&SC. The shortlist score also appears in the vendor invitation dialog. |
+| **Sourcing workbench** | Per-RFQ tabs: **Evaluation** (weighted 0–5 technical scorecard, several evaluators, must-pass gates, combined technical + price score), **Award scenarios** (cheapest award under vendor limits, share caps, required/excluded vendors and lead-time caps, plus a cost-of-consolidation curve), **Negotiation** (best-and-final-offer rounds with target totals, round-over-round movement and approved e-mail requests) and **Clarifications** (Q&A log with anonymised broadcast to invited vendors). |
+| **Savings tracker** | Savings on RFQs with an accepted reply, against target price or the average comparable bid, by category, plus manually recorded savings initiatives. |
 
 ## Getting started
 
@@ -211,6 +214,20 @@ Open **Quote extraction**, select an accessible RFQ case and target vendor RFQ i
 Document text and staged review are page-memory only and clear on navigation or company/case/vendor changes. No document or review is saved in app localStorage/Dataverse. Submitted text is processed by Copilot Studio and may be retained under the environment's agent/transcript policies; browser-memory clearing does not remove those service-side records. Three-minute operation timeouts discard late responses; an agent request already submitted may continue server-side.
 
 Deploy agent updates with `pac copilot push --project-dir .\extraction-agent` and `pac copilot publish --bot rfq_quoteExtraction --environment <environment-id>`. Users need agent/connector and underlying RFQ data permissions. PDF.js and its worker are bundled locally, loaded on demand, with no third-party PDF upload service. Implementation: [src/lib/quote-extraction.ts](src/lib/quote-extraction.ts), [src/data/quote-document.ts](src/data/quote-document.ts), [src/data/quote-extraction.ts](src/data/quote-extraction.ts) and [src/pages/quote-extraction.tsx](src/pages/quote-extraction.tsx).
+
+### Sourcing capabilities (drafting, workbench, savings)
+
+These features cover the sourcing items of the Ariba-alternative blueprint (RFx drafting, supplier discovery, qualitative scoring, award optimisation, negotiation, clarifications and savings tracking).
+
+- **No ERP writes.** Drafts export as a staging JSON package. Awards, RFQ creation and purchase orders stay in F&SC.
+- **Browser-local data.** Drafts, scorecards, negotiation rounds, clarifications and savings initiatives live in localStorage under `rfq-sourcing:*` keys, scoped by legal entity (see [src/data/sourcing-store.ts](src/data/sourcing-store.ts)). They are not shared across buyers or devices; replace `LocalCollection` with custom Dataverse tables for shared use.
+- **Rule-based drafting.** Requirement parsing is deterministic (no AI call) and everything stays editable. A Copilot Studio drafting agent can be added later through the same `AgentExecutor` pattern.
+- **Scenario optimiser.** Searches every vendor subset (up to 10 priced bids). Offers that skip a line, or have an unknown lead time when a lead-time cap is set, are not eligible. With a per-vendor share cap, lines are moved off over-cap vendors heuristically, so that result is not a proven optimum.
+- **Negotiation and clarification e-mails** go out through the same Outlook path and invitation history as vendor invitations, after explicit buyer approval. Request e-mails contain only the recipient's own figures; published answers never name the asking vendor.
+- **Savings** use the target total when every line has a target price, otherwise the average of bids that cover every line. RFQs with partial awards or no baseline are listed as unmeasured, not estimated.
+- Vendor rating, on-time delivery and RFQ header category are not exposed by the live VRM entities (see below), so supplier-fit scoring relies on vendor group and bidding history until those are mapped.
+
+Implementation: [src/lib/sourcing/](src/lib/sourcing), [src/components/sourcing/](src/components/sourcing), [src/pages/sourcing-draft.tsx](src/pages/sourcing-draft.tsx), [src/pages/sourcing-workbench.tsx](src/pages/sourcing-workbench.tsx) and [src/pages/savings.tsx](src/pages/savings.tsx). Tests: [tests/sourcing.test.mjs](tests/sourcing.test.mjs).
 
 ## Notes and limitations
 

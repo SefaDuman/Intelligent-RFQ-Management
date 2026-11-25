@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react"
 import { NavLink, Outlet, useNavigate } from "react-router-dom"
-import { Bot, Database, FileSearch, FileStack, FlaskConical, LayoutDashboard, MailCheck, Scale, Search, Sparkles } from "lucide-react"
+import { Bot, Database, FilePlus2, FileSearch, FileStack, FlaskConical, LayoutDashboard, MailCheck, PiggyBank, Scale, Search, Sparkles, Wrench } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ModeToggle } from "@/components/mode-toggle"
 import { Input } from "@/components/ui/input"
@@ -19,6 +19,9 @@ const NAV = [
   { to: "/assistant", label: "RFQ assistant", icon: Bot },
   { to: "/follow-up", label: "Vendor follow-up", icon: MailCheck },
   { to: "/quote-extraction", label: "Quote extraction", icon: FileSearch },
+  { to: "/rfq-draft", label: "RFQ drafting", icon: FilePlus2 },
+  { to: "/sourcing", label: "Sourcing workbench", icon: Wrench },
+  { to: "/savings", label: "Savings tracker", icon: PiggyBank },
 ]
 
 function DataSourceBadge({ compact }: { compact?: boolean }) {

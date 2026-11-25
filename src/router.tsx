@@ -8,6 +8,9 @@ import NotFoundPage from "@/pages/not-found-page"
 import AssistantPage from "@/pages/assistant"
 import VendorFollowupPage from "@/pages/vendor-followup"
 import QuoteExtractionPage from "@/pages/quote-extraction"
+import SourcingDraftPage from "@/pages/sourcing-draft"
+import SourcingWorkbenchPage from "@/pages/sourcing-workbench"
+import SavingsPage from "@/pages/savings"
 
 // IMPORTANT: Do not remove or modify the code below!
 // Normalize basename when hosted in Power Apps
@@ -29,6 +32,9 @@ export const router = createBrowserRouter([
       { path: "assistant", element: <AssistantPage /> },
       { path: "follow-up", element: <VendorFollowupPage /> },
       { path: "quote-extraction", element: <QuoteExtractionPage /> },
+      { path: "rfq-draft", element: <SourcingDraftPage /> },
+      { path: "sourcing/:id?", element: <SourcingWorkbenchPage /> },
+      { path: "savings", element: <SavingsPage /> },
       { path: "*", element: <NotFoundPage /> },
     ],
   },

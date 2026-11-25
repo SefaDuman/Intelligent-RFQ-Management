@@ -1,6 +1,6 @@
 import { useMemo, useState, type ReactNode } from "react"
 import { Link, useNavigate, useParams } from "react-router-dom"
-import { ArrowLeft, CalendarDays, Clock, ExternalLink, Mail, MailX, Package, Scale, Tag, Truck, User, Wallet } from "lucide-react"
+import { ArrowLeft, CalendarDays, Clock, ExternalLink, Mail, MailX, Package, Scale, Tag, Truck, User, Wallet, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -110,6 +110,11 @@ export default function RfqDetailPage() {
                 <Mail /> Invite vendors
               </Button>
             )}
+            <Button variant="outline" asChild>
+              <Link to={`/sourcing/${encodeURIComponent(header.rfqCaseId)}`}>
+                <Wrench /> Sourcing workbench
+              </Link>
+            </Button>
             <Button disabled={answeredIds.length < 2} onClick={() => navigate(compareUrl(selected.size >= 2 ? [...selected] : answeredIds))}>
               <Scale /> {selected.size >= 2 ? `Compare ${selected.size} selected` : "Compare replies"}
             </Button>
